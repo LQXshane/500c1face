@@ -14,10 +14,10 @@ Make sure the files and folders are on the directary on git, use "cd" to change
 5. To edit 'md' files, use 'vim #####.md'. Check the tutorial from 16:15
 
 6. to uplaod file or folder through git shell:
-   1 git add FILE.xxx or FOLDER
-   2 git commit -m "COMMENT" 
-   3 git push
-   4 git remote add origin https://github.com/GordonCai/500c1face.git (or any branch under master)
+   1. git add FILE.xxx or FOLDER 
+   2. git commit -m "COMMENT" 
+   3. git push
+   4. git remote add origin https://github.com/GordonCai/500c1face.git (or any branch under master)
 
 7. to delete file:
    replace git add with rm
