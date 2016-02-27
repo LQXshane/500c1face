@@ -1,34 +1,11 @@
 1. Download sublimetext, best editor ever ;)
 
 2. Bootstrap is has html, some css (ie image and table) and some javascript (ie 
-   button, popups and slideshow) built into it. Here is its basic structure:
-bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   └── bootstrap-theme.min.css.map
-├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-├── fonts/
-│   ├── glyphicons-halflings-regular.eot
-|   ├── glyphicons-halflings-regular.svg
-|   ├── glyphicons-halflings-regular.ttf
-|   ├── glyphicons-halflings-regular.woff
-|   └── glyphicons-halflings-regular.woff2 
-├── xxxx.html
-├── xxxx.html
-├── xxxx.html
-├── xxxx.html
+   button, popups and slideshow) built into it. 
 
-
-3. If you want to try out bootstrap, download the complied version from :
+3. If you want to try out bootstrap, download the complied version from:
    https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip
+   And put it int the same file where you put your html file.
 
    If we need to run bootstrap at AWS (on Linux), we might need to install the uncomplied version with LESS (CSS complier). 
 
