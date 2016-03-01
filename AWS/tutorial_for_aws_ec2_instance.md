@@ -16,7 +16,7 @@ visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/Us
 
 visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
 
-6. launch instance using the security goup and keys you just set up
+6.  launch instance using the security goup and keys you just set up
 
 7. connect to EC2
 
