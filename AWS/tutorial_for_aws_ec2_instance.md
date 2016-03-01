@@ -4,6 +4,8 @@
 
 visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
 
+visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+
 1. sign up AWS
 
 2. create Identity and Access Management (IAM) user, it manages login process
@@ -13,8 +15,6 @@ visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/Us
 4. create a Virtual Private Cloud (VPC), it manages instance and other components inside AWS
 
 5. create security group through EC2 console, set up who can access your instance
-
-visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
 
 6.  launch instance using the security goup and keys you just set up
 
