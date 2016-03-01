@@ -1,23 +1,39 @@
-#Tutorial for AWS EC2 Instance
+#Tutorial for set up EC2, you dont have to know this, it gives a brief explaination of what EC2 is made of.
+
+**THANKS TO Qiuxuan Lin for the links and instruction**
+
+visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
+1. sign up AWS
+
+2. create Identity and Access Management (IAM) user, it manages login process
+
+3. create key pair, which is used to log into your instance, one key per region
+
+4. create a Virtual Private Cloud (VPC), it manages instance and other components inside AWS
+
+5. create security group through EC2 console, set up who can access your instance
+
+visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+6. launch instance using the security goup and keys you just set up
+
+7. connect to EC2
+   If using windows, use putty to connnect: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+   if using OS, use ssh: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html 
 
 
 
-###**1. Connect to the AWS instance**
 
 
-So we are talking about connecting to an existing instance. To learn more about creating/managing(which is what I've been doing), see 
+#Tutorial for connect EC2, which matters 
 
-
-<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html?icmpid=docs_ec2_console>
 
 First of all, make sure that the instance is **running**.   If it's turned off no way anyone can connect to it.
 
 **Now, we want the key to be readable and excecutable from your computer, to do this open up your** **terminal**
 
-(*for Windows probably doable via cmd*)
+(*for Windows, use putty, see the above link*)
 
-> $ cd ~/Dropbox/EC500C1/
-
+> $ cd ~/Dropbox/EC500C1/ **I will change this soon**
 
 The key is named "FaceDect.pem" (typo...yeah I know). Use chmod command
 
@@ -26,6 +42,7 @@ The key is named "FaceDect.pem" (typo...yeah I know). Use chmod command
 Use ***ssh*** to access our EC2 instance
 
 >$ ssh -L 5901:localhost:5901 -i ~/Dropbox/EC500C1/"FaceDect.pem" ubuntu@ec2-52-90-32-113.compute-1.amazonaws.com
+**each time EC2 is reboot, "ec2-52-90-32-113.compute-1.amazonaws.com" will change I will let all of you konw the new DNS each time I reboot EC2
 
 Notice that this command has three parts:
 
