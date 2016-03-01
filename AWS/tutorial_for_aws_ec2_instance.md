@@ -1,4 +1,4 @@
-#THANKS TO Qiuxuan Lin for the links and instruction
+#THANKS TO Qiuxuan Lin for the links and tips
 
 #Tutorial for set up EC2, you dont have to know this, it gives a brief explaination of what EC2 is made of.
 
