@@ -1,6 +1,6 @@
-#Tutorial for set up EC2, you dont have to know this, it gives a brief explaination of what EC2 is made of.
-
 #THANKS TO Qiuxuan Lin for the links and instruction
+
+#Tutorial for set up EC2, you dont have to know this, it gives a brief explaination of what EC2 is made of.
 
 visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
 
@@ -26,7 +26,7 @@ visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGui
 
 
 
-#Tutorial for connect EC2, which matters 
+#Tutorial for connect EC2, which matters more for everyone
 
 
 First of all, make sure that the instance is **running**.   If it's turned off no way anyone can connect to it.
