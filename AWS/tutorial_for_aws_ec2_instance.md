@@ -3,6 +3,7 @@
 **THANKS TO Qiuxuan Lin for the links and instruction**
 
 visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
+
 1. sign up AWS
 
 2. create Identity and Access Management (IAM) user, it manages login process
@@ -14,13 +15,14 @@ visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/Us
 5. create security group through EC2 console, set up who can access your instance
 
 visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+
 6. launch instance using the security goup and keys you just set up
 
 7. connect to EC2
+
    If using windows, use putty to connnect: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
    if using OS, use ssh: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html 
-
-
 
 
 
