@@ -1,6 +1,6 @@
 #Tutorial for set up EC2, you dont have to know this, it gives a brief explaination of what EC2 is made of.
 
-**THANKS TO Qiuxuan Lin for the links and instruction**
+***THANKS TO Qiuxuan Lin for the links and instruction***
 
 visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
 
