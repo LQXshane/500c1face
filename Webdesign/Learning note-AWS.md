@@ -1,3 +1,5 @@
+Source: https://d36cz9buwru1tt.cloudfront.net/AWS_Overview.pdf
+
 1. Intro
 
    AWS hase compute power, storage, databases, messaging, and other building block services
@@ -6,7 +8,7 @@
 
 2. Computer & networking
    
-  ** Amazon Elastic Compute Cloud (Amazon EC2)**: server side computing power
+  **Amazon Elastic Compute Cloud (Amazon EC2)**: server side computing power
 
    Auto Scaling & load balancing
 
