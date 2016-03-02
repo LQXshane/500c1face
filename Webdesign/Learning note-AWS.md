@@ -6,7 +6,7 @@
 
 2. Computer & networking
    
-  ** Amazon Elastic Compute Cloud (Amazon EC2)**: server side computing power
+  **Amazon Elastic Compute Cloud (Amazon EC2)**: server side computing power
 
    Auto Scaling & load balancing
 
