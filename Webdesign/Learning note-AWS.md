@@ -1,3 +1,5 @@
+Source: https://d36cz9buwru1tt.cloudfront.net/AWS_Overview.pdf
+
 1. Intro
 
    AWS hase compute power, storage, databases, messaging, and other building block services
