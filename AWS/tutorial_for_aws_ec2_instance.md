@@ -43,14 +43,14 @@ The key is named "FaceDect.pem" (typo...yeah I know). Use chmod command
 
 Use ***ssh*** to access our EC2 instance
 
->$ ssh -L 5901:localhost:5901 -i ~/Dropbox/EC500C1/"FaceDect.pem" ubuntu@ec2-52-90-32-113.compute-1.amazonaws.com
+>$ ssh -L 5901:localhost:5901 -i ~/Dropbox/EC500C1/"FaceDect.pem" ubuntu@ec2-54-84-164-103.compute-1.amazonaws.com
 **each time EC2 is reboot, "ec2-52-90-32-113.compute-1.amazonaws.com" will change I will let all of you konw the new DNS each time I reboot EC2
 
 Notice that this command has three parts:
 
 - -L 5901:localhost:5901  This is to set up VNC server for the next step.
 - your key.pem, make sure the directory is correct
-- ec2-52-90-32-113.compute-1.amazonaws.com is the public DNS for our instance. 
+- ubuntu@ec2-54-84-164-103.compute-1.amazonaws.com is the public DNS for our instance. 
 **Important: this would change everytime the instance is rebooted. Check up with me if necessary. 
 **
 
