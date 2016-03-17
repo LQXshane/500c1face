@@ -145,6 +145,7 @@ List: <ul style="list-style-type:disc"> unordered list; style type: disc,circle,
         <dt>Coffee</dt>
         <dd>- black hot drink</dd>
       </dl> 
+
       horizontal list
       nested list
 
@@ -183,12 +184,12 @@ iframe: website in a website
          <iframe src="demo_iframe.htm" style="border:5px dotted red"></iframe>
         
 
-Javascript: Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+Javascript: Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content
            <script> </script> 
            More info see Learning notes-javascript
 
 
-Define head: <!DOCTYPE html>
+Define head:<!DOCTYPE html>
             <html>
 
             <head>
@@ -223,5 +224,62 @@ URL: Uniform Resource Locator
      filename - defines the name of a document or resource
 
 
+Form: action attribute defines the action to be performed when the form is submitted:
+      'get' methods is used if the form submission is passive (like a search engine query)
+      'post' is used if the form is updating data, or includes sensitive information (password)
+      <form action="action_page.php" method="get">  
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey"><br> 
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit"> submit via php 
+      </form> 
+
+Form elements: select from a dropdown list:
+                <select name="cars">
+                 <option value="volvo">Volvo</option>
+                 <option value="saab">Saab</option>
+                </select>
+
+               input: more at next section
+
+               multi line form input:
+                <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea> 
+
+
+Input types: one-line input field for text:
+              First name:
+              <input type="text" name="firstname" value="Mickey"><br> input type in 
+             
+             select only one of a limited number of choices:
+              <input type="radio" name="gender" value="male" checked> Male<br> 
+              <input type="radio" name="gender" value="female"> Female<br>
+             
+             a button for submitting form input:
+              <input type="submit" value="Submit"> 
+
+             a password field:
+              User password:<br>
+              <input type="password" name="psw">
+
+             select zero or multiple options of a limited number of choices:
+              <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+              <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+
+             button:
+              <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+             Contain a numeric value, numeric restrictions will apply in the input field:
+              Quantity (between 1 and 5):
+              <input type="number" name="quantity" min="1" max="5">
+
+
+Input attributes: value attribute specifies the initial value for an input field
+                  
+                  specifies the size for the input field:
+                   <input type="text" name="firstname" value="John" size="40">
+
+                  specifies the maximum allowed length for the input field: 
+                   <input type="text" name="firstname" maxlength="10">
 
 
