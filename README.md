@@ -9,5 +9,9 @@ Design program with Python and OpenCV
 Store program and website on Amazon AWS
 Interconnect program with Amazon Product advertising API
 
+AWS/ -- Amazon Wes Service files
+Datebase -- SQLite files
+Python code -- Python coed used in the project
+Webdesign -- all file related to dynamic website design
 
 To be continued
