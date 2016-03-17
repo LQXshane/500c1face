@@ -1,12 +1,15 @@
 HTML notes, *open with IDE, not browser*
 
-Basic: <html>, <h>, <p>, 
+Basic: <!DOCTYPE html>, <html>, <h>, <p>, 
        <a href="http://www.w3schools.com">This is a link</a>,
        <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">, 
-       <br>, <></>, <! >
+       <br>, < ></ >, <! >
 
 
-Attributs: <html lang="en-US">,
+Elements: elements are written with a start tag, with an end tag, with the content in between
+
+Attributs: provide additional information about HTML elements.
+           <html lang="en-US">,
            <p title="About W3Schools">, 
            <a href="http://www.w3schools.com">This is a link</a> , 
            <img src="w3schools.jpg" width="104" height="142">, 
@@ -15,23 +18,30 @@ Attributs: <html lang="en-US">,
            Always Quote Attribute Values
 
 
-Heading: Search engines use your headings to index the structure. 
+Heading: more to see at 'define head' later in this note
+         <h> Search engines use your headings to index the structure. 
          Use headings to show the document structure.
          h1 headings should be main headings.
          <hr>: horizontal line
-         <title>: displayed in the browser tab
-         <meta>: define the character set
+         <head>
+             <title>My First HTML</title>
+             <meta charset="UTF-8">
+         </head>
 
 
 Paragraph: <p>, <br>, 
-           <pre>: preformated text
+           <pre> preformated text
 
 
 Style: format: style="property:value;" 
        <style="color:red">
        <style="background-color:blue"> 
        font-family:verdana; font-size:200%; text-align:center;">, 
-       css style
+       css style:
+          <style>
+             div.cities {
+             }
+          </style>      
 
 
 Formatting: <b></b>: bold, <strong>, <i> italic, <em> emphasized, 
@@ -39,18 +49,18 @@ Formatting: <b></b>: bold, <strong>, <i> italic, <em> emphasized,
             <sub> subscripted, <sup> superscripted
 
 
-Quotation: <q></q>, <blockquote cite="http://www.google.com"></blockquote>, 
+Quotation: <q> </q>, 
+           <blockquote cite="http://www.google.com"></blockquote>, 
            <abbr title="World Health Organization">WHO</abbr> , 
            <address> type address
 
 
-Code: <code>, <samp>, <kbd>, <var>
+Display code: <code>, <samp>, <kbd>, <var>
 
 
-color: <h2 style="background-color:rgb(0,255,0)"> 
-       color:red; 
-       color:#ff0000;
-
+Color: <h2 style="background-color:rgb(0,255,0)"> 
+       <h2 style="background-color:red"> 
+       <h2 style="background-color:#ffaa00"> 
 
 CSS: Cascading Style Sheets
      Inline styling: <p style="color:red">, refer to 'style'
@@ -62,10 +72,12 @@ CSS: Cascading Style Sheets
              p    {color:green;}
         </style>
         </head>
+
      External styling: 
         <head>
              <link rel="stylesheet" href="styles.css">
         </head>
+
      color, font-size, font-family, 
      {border, pading, margin}
      id attributes: 
@@ -87,31 +99,125 @@ CSS link: format: <a href="url">link text</a>
                     <a href="#tips">Visit the Useful Tips Section</a>
 
 
-          
+Image: <img src="/image/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">, 
+       image link: see css image-link, 
+       image float, 
+       image map:  <img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+                   <map name="planetmap">
+                       <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+                       <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+                       <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+                   </map>
 
-Image: <img style="width:300px;height:200px;">, image link, image map
 
-Table: <caption>, <tr>, <th>, <td>, css border, css padding, <colspan="", rowspan="">, css special style
+Table:  <table border="1" style="width:100%">
+           <tr>
+              <th>Name</th>
+           </tr>
+           <tr>
+              <td>Jill</td>
+           </tr>
+        </table> 
+        local table styling:  table, th, td {
+                                border: 1px solid black;
+                                border-collapse: collapse;
+                              }
+                              th, td {
+                                padding: 15px;
+                                text-align: left;
+                                border-spacing: 5px;
+                              }
+        take more than one column: <th colspan="2">Telephone</th>
+        take more than one row: <th rowspan="2">Telephone</th>
+        <caption>Monthly savings</caption>
+        special styling: <table id="t01">
+                         table#t01 { }
+        table#t01 tr:nth-child(even) { }
 
-List: <ul>, <li>, <style="list-style-type:">, <ol type="">, <dl>, nesting, css display:inline
 
-Insert: <div>, <span>
+List: <ul style="list-style-type:disc"> unordered list; style type: disc,circle, square, none
+        <li>Coffee</li>
+      </ul> 
+      <ol type="1"> ordered list; style type: 1,A,a,I,i
+        <li>Coffee</li>
+      </ol> 
+      <dl type="1"> description list
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+      </dl> 
+      horizontal list
+      nested list
 
-Block: <h>, <p>, <div>, <form>
-Inline: <span>, <a>, <img>
 
-css class: span.xxx, div.xxx
+Blocks: block level elements: <div>, <h1> - <h6>, <p>, <form>
+        <div style="background-color:black; color:white; padding:20px;">
+        inline elements: <span>, <a>, <img>
+        <h1>My <span style="color:red">Important</span> Heading</h1>
 
-Java id: #xxx{}, <id="xxx">
 
-Layout: <header> - Defines a header for a document or a section
-        <nav> - Defines a container for navigation links
-        <section> - Defines a section in a document
-        <article> - Defines an independent self-contained article
-        <aside> - Defines content aside from the content (like a sidebar)
-        <footer> - Defines a footer for a document or a section
-        <details> - Defines additional details
-        <summary> - Defines a heading for the <details> element
+Class: define class in head: div.cities {  }
+       internal class: <div class="cities"> </div>
+       inline class: <span class="note"> </span>
+
+
+Layout: <style> bootstrap has different layout
+          #header {
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:5px;
+          }
+          #nav { }
+          #section { }
+          #footer { }
+          #article{ }
+          #aside { }
+        </style> 
+        <div id="header"> </div>
+
+
+Resiponsive: bootstrap has this function built in
+
+
+iframe: website in a website
+         <iframe src="demo_iframe.htm" style="border:5px dotted red"></iframe>
+        
+
+Javascript: Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+           <script> </script> 
+           More info see Learning notes-javascript
+
+
+Define head: <!DOCTYPE html>
+            <html>
+
+            <head>
+            <title>Page Title</title> name displayed in the tab
+            <link rel="stylesheet" href="mystyle.css">  defines the page relationship to an external resource
+            <meta name="description" content="Free Web tutorials">
+            <meta name="keywords" content="HTML,CSS,XML,JavaScript"> define keywords for search engines
+            <meta name="author" content="Hege Refsnes">
+            <meta charset="UTF-8"> define character set used
+            <meta http-equiv="refresh" content="30"> refresh page every 30 seconds
+            <base href="http://www.w3schools.com/images/" target="_blank"> specifies the base URL and base target for all relative URLs in a page
+            <script> </script>
+            <style> </style>
+            </head>
+
+            <body>
+            </body>
+            </html>
+
+
+
+
+
+
+
+
+
+
+
 
 CSS style definitions: background-color, color, height, width, font-size, font-family, line-height
                          text-align,padding, float, border
