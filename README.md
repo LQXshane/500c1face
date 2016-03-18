@@ -16,3 +16,5 @@ The following files are used to maintian all subject related documents
 * Webdesign -- all file related to dynamic website design
 
 To be continued
+
+![alt text](/Pres1 website/img/slideshow4.png)
