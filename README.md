@@ -9,12 +9,10 @@ Design program with Python and OpenCV
 Store program and website on Amazon AWS
 Interconnect program with Amazon Product advertising API
 
-AWS/ -- Amazon Wes Service files
-
-Datebase -- SQLite files
-
-Python code -- Python coed used in the project
-
+The following files are used to maintian all subject related documents
+AWS/ -- Amazon Wes Service
+Datebase -- MySQL
+Python code -- Python coed
 Webdesign -- all file related to dynamic website design
 
 To be continued
