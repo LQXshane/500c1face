@@ -1,18 +1,20 @@
 # 500c1face
-EC500 C1 final project- face recognition
+## EC500 C1 final project- face recognition
 
-We have decided to work on using Amazon's API to design an APP to allow customers to try on make-ups by taking a photo from local computers and processing it with OpenCV and apply virtual effects on the photo.
+![Alt text](/path/to/image.jpg)
+
+The outcome of this project is to use AWS to host a web app that allow the photos end users upload from the computer to be processed in the server side. The processes is to help user to try out make-up online and make purchase through the app or in other linked online shops.
 
 Key components:
-Website design
-Design program with Python and OpenCV
-Store program and website on Amazon AWS
-Interconnect program with Amazon Product advertising API
+*Web app design
+*Virtual effect processed through Python with dlib and OpenCV
+*Host web app and Python code on Amazon AWS
+*Link to Amazon Product advertising API
 
 The following files are used to maintian all subject related documents
-AWS/ -- Amazon Wes Service
-Datebase -- MySQL
-Python code -- Python coed
-Webdesign -- all file related to dynamic website design
+*AWS/ -- Amazon Wes Service
+*Datebase -- MySQL
+*Python code -- Python code
+*Webdesign -- all file related to dynamic website design
 
 To be continued
