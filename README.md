@@ -1,7 +1,5 @@
 # EC500C1 Make-up Project:WITCH
 
-### EC500 C1 final project- face recognition
-
 The outcome of this project is to use AWS to host a web app that allow the photos end users upload from the computer to be processed in the server side. The processes is to help user to try out make-up online and make purchase through the app or in other linked online shops.
 
 Key components:
