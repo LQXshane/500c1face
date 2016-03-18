@@ -67,7 +67,8 @@ Text: alignment:
 Font: family: {font-family: } {font-style: } {font-size: }
 
 
-Link: a:link, a:visited {
+Link: style a link, more in the 'Pseudo class' 
+      a:link, a:visited {
         background-color: #f44336;
         color: white;
         padding: 14px 25px;
@@ -87,7 +88,7 @@ List: see List in html learning note
 Table: see Table in html learning note
 
 
-Box model: margin+border+padding+content
+Box model: margin+border+padding = content size
            div {
             width: 320px;
             padding: 10px;
@@ -107,7 +108,59 @@ Display: see Block in html learning note
 Max-width: see layout in html learning note
 
 
-Position: 
+Position: {position: fixed; bottom: 0;right: 0;} {position: relative;} 
+          {position: absolute;top: 80px;right: 0;width: 200px;height: 100px;}
+          
+
+Float & align: Bootstrap has them built in with its grid system
+       
+
+Combinators: p is the parent; div is the child;
+             descendant selector: all the children of an element:
+              div p {  } 
+             child selector: immediate children of a specified element:
+              div > p {  }
+             sibling Selector: not a child of an element: 
+              div ~ p {  }
+
+               
+Pseudo-class: general form: selector:pseudo-class {  }
+              :link  :visited  :hover  :active
+              can be combined with CSS class: a.sth:hover {  }
+
+
+Pseudo-element: general form:  selector::pseudo-element { }
+
+
+Navigation bar: build navigation bar from a standard HTML list;
+                Bootstrap has it built in, more in Boot strap learning notes;
+
+
+Dropdown: Bootstrap has it built in, more in Boot strap learning notes;
+
+
+Tooltip: Bootstrap has it built in, more in Boot strap learning notes;
+
+
+Image: More in Bootstrap learning notes;
+
+
+Attribute selector: style specific attributes or attribute values;
+                    for specific attributes: 
+                     a[target] {  } target is the attribute;
+                    for specific attribute value: 
+                     a[target="_blank"] { }
+
+
+Form: general format: input[type=  ] {  }
+      more detail of form in html learning note;
+
+
+
+
+
+
+
 
 
 
