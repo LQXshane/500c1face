@@ -1,7 +1,7 @@
 # 500c1face
 ## EC500 C1 final project- face recognition
 
-![Alt text](/500c1face/Pres1 website/img/slideshow2.png)
+![Alt text](/Pres1 website/img/slideshow2.png)
 
 The outcome of this project is to use AWS to host a web app that allow the photos end users upload from the computer to be processed in the server side. The processes is to help user to try out make-up online and make purchase through the app or in other linked online shops.
 
