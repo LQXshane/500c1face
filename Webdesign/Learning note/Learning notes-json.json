@@ -1,0 +1,131 @@
+JSON notes, *open with IDE, not browser*
+
+Intro: JavaScript Object Notation;
+
+       syntax for storing and exchanging data;
+
+       easier-to-use alternative to XML;
+
+       syntactically identical to the code for creating JavaScript objects;
+
+Syntax: JSON creates an array of objects and assign data to it;
+        
+        example: 
+            "employees":[
+                {"firstName":"John", "lastName":"Doe"},
+                {"firstName":"Anna", "lastName":"Smith"},
+                {"firstName":"Peter", "lastName":"Jones"}
+            ]
+
+            document.getElementById("demo").innerHTML = employees[0].firstName +
+             " " + employees[0].lastName; /* will display 'John Doe' */
+
+            employees[0].firstName="Gilbert"; 
+              /* assign new value to replace John */
+              /* [0] to find row, .firstName to find column */
+   
+
+Howto:  demonstrated by using a string as input (instead of a file):
+        <body>
+        <p id="demo">text will be displayed here.</p> /* event target */
+
+        <button type="button" onclick="myFunction()">Try it</button> /* event trigger */
+
+        <script> /* event process */
+        function myFunction() {
+        	/* create a JavaScript string containing JSON syntax, not real JSON file */
+        	var text = '{"employees":[' +
+        	'{"firstName":"John","lastName":"Doe" },' +
+        	'{"firstName":"Anna","lastName":"Smith" },' +
+        	'{"firstName":"Peter","lastName":"Jones" }]}';
+
+        	obj = JSON.parse(text); /* convert a JSON text into a JavaScript object */
+        	document.getElementById("demo").innerHTML = 
+        	obj.employees[1].firstName + " " + obj.employees[1].lastName;
+        }
+        </script>
+        </body>
+
+
+Function: read JSON data, using function files;
+
+          1. create an array of object:
+             
+             var myArray = [
+             {
+             "display": "JavaScript Tutorial",
+             "url": "http://www.w3schools.com/js/default.asp"
+             },
+             {
+             "display": "HTML Tutorial",
+             "url": "http://www.w3schools.com/html/default.asp"
+             },
+             {
+             "display": "CSS Tutorial",
+             "url": "http://www.w3schools.com/css/default.asp"
+             }
+             ]   /* object uses {}, array uses [] */  
+
+          2. create a JavaScript function to display the array:
+             
+             function myFunction(arr) {
+                 var out = "";
+                 var i;
+                 for(i = 0; i < arr.length; i++) {
+                     out += '<a href="' + arr[i].url + '">' + arr[i].display + '</a><br>';
+                 }
+                 document.getElementById("id01").innerHTML = out;
+             }  /*  */  
+
+          3. Use an array literal as the argument (instead of the array variable), -
+             call myFunction() with an array literal as argument:
+
+             myFunction([
+             {
+             "display": "JavaScript Tutorial",
+             "url": "http://www.w3schools.com/js/default.asp"
+             },
+             {
+             "display": "HTML Tutorial",
+             "url": "http://www.w3schools.com/html/default.asp"
+             },
+             {
+             "display": "CSS Tutorial",
+             "url": "http://www.w3schools.com/css/default.asp"
+             }
+             ]);
+
+          4. triger function:
+             myFunction(myArray);
+
+          5. tag js file in the script:
+
+             <script src="JSON prac1.js"></script>
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

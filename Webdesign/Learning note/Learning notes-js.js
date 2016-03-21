@@ -3,11 +3,12 @@ Javascript notes, *open with IDE, not browser*
 Intro:  use  getElementById() to "find" an HTML element (with id="demo"), -
         and changes the element content (innerHTML) to "Hello JavaScript":
          document.getElementById("demo").innerHTML = "Hello JavaScript";
-        <Changing the style of an HTML element:
+
+        Changing the style of an HTML element:
          <p id="demo"> sth </p>
          <button type="button" onclick="
          document.getElementById("demo").style.fontSize = "25px";
-         document.getElementById("demo").innerHTML = "Hello World";">
+         document.getElementById("demo").innerHTML = "Hello World";"
 
 
 Where to: tag; <script>  </script> ;
@@ -17,11 +18,9 @@ Where to: tag; <script>  </script> ;
              function myFunction() {
              document.getElementById("demo").innerHTML = "Paragraph changed.";
              }
-           </script> define function 
-
+           </script> \\ define function 
            <button type="button" onclick="myFunction()">Try it</button> call/triger event
-
-           <p id="demo">A Paragraph.</p> event's target
+           <p id="demo">A Paragraph.</p> \\ event's target
 
           It is a good idea to place scripts at the bottom of the <body> element. 
 
@@ -50,7 +49,7 @@ Syntax: JavaScript statements are composed of: -
         operators: = is to assign values to var;
                    +-*/ to compute values;
 
-        expression: literal+var+operators
+        expression: literal+var+operators;
 
         keywords: used to identify actions to be performed: var y = x * 10
 
@@ -58,9 +57,9 @@ Syntax: JavaScript statements are composed of: -
 
         identifier: first character must be a letter, an underscore (_), or a dollar sign ($), not number;
 
-        case sensitive
+        case sensitive;
 
-        camel case: ie innerCity, lastName
+        camel case: ie innerCity, lastName;
 
         
 Statements: statements are "instructions" to be "executed" by the web browser;
@@ -93,15 +92,19 @@ Statements: statements are "instructions" to be "executed" by the web browser;
 
 
 Variables: general format: var identifier operator data: var x = 5;
-           declaring: var identifier; then assign value: identifier operator
+
+           declaring: var identifier; then assign value: identifier operator -
             data; or without assignnig value and used later
 
 
 Operaters: arithmetic: + - * ? %(division remainder) ++ --;
+
            assignment: = += -=*= /= %=; ie x += y means x = x+y;
+
            string: txt3 = txt1 + " " + txt2;
-            add string and number: "5"+5 = 55; "Hello" + 5 = "Hello5"
-           comparison and logical: more at "Comparison" later
+            add string and number: "5"+5 = 55; "Hello" + 5 = "Hello5";
+
+           comparison and logical: more at "Comparison" later;
              ==	equal to
              ===	equal value and equal type
              !=	not equal
@@ -110,19 +113,28 @@ Operaters: arithmetic: + - * ? %(division remainder) ++ --;
              ?	ternary operator
 
 
-Data type: <typical types of variables: number, string, array and object;> 
-           when adding a number and a string, JavaScript will treat the number as a string; can use single or double quotes;
+Data type: typical types of variables: number, string, array and object;
+
+           when adding a number and a string, JavaScript will treat the number as a string; 
+           can use single or double quotes;
+
            booleans;
+
            array: var cars = ["Saab", "Volvo", "BMW"]; cars[0] is "saab";
-           objects:  name:value pairs
+           
+           objects:  name:value pairs;
 
            typeof: display the type of variable;
+
            undefined type: var person, value is undefined, so is tyoe;
+
            null: var person = null, value is undefined, type is object;
+
            empty value: var car = " ", value is " ", type is string;
 
 
 Function: a block of code designed to perform a particular task;
+
           general format: function name(parameter1, parameter2, parameter3) { code to be executed }
           
           return statement: return value to caller id="demo"
@@ -138,15 +150,19 @@ Function: a block of code designed to perform a particular task;
              var text = "The temperature is " + toCelsius(77) + " Celsius";
 
 
-Object: <object is variable too ,but has many values>
-        general format: {objectPropertyName1:objectPropertyValue1;...}
+Object: object is variable too ,but has many values
+
+        general format: {objectPropertyName1:objectPropertyValue1;...};
+
         avoid String, Number, and Boolean objects;
 
 
 Scope: set of variables, objects, and functions you have access to;
+
        local and global variables: 
         local declarition is done inside a function;
         global variables is either declared outside or no declaration;
+
        a variable's life starts at declarition and ends when its deleted or page is closed;
        in html, all variables belong to the same window: 
          function myFunction() {carName = "Volvo";}
@@ -154,9 +170,11 @@ Scope: set of variables, objects, and functions you have access to;
 
 
 Event: "things" that happen to HTML elements, JavaScript can "react" on these events;
+
        HTML event can be something the browser does, or something a user does, JavaScript lets you execute code when events are detected.
+       
        event handler attributes: <some-HTML-element some-event="some JavaScript">;
-         <button onclick='getElementById("demo").innerHTML=Date()'>The time is?</button>
+         <button onclick='getElementById("demo").innerHTML=Date()'>The time is?< button>
 
        common html event: 
          onchange   An HTML element has been changed
@@ -172,33 +190,45 @@ Property and methods: property relates to the values of data;
                       methods relates the actions can be performed on data;
 
 
-String: string property: ie txt.length; <property can only process one data>
-        special character that clash with JS syntax
+String: string property: ie txt.length; <property can only process one data>;
+
+        special character that clash with JS syntax;
+
         breaking long code: use \; break after a operater; use string addition;
+
         string is not a array, string is still one 
         set string as object: var y = new String("John");
 
 
 String method: str.search;
+
                extract: str.slice(startLocation ,endLocation) or str.slice(startLocation) returns everything after or str.substr(startLocation, length);
+               
                replce: str.replace("toBeReplaced","replacing");
+
                find single character in string: str.charCodeAt(0);
+
                convert string to array for future processing:
                  str.split(","), str.split(" "); str.split("|");
 
 
 Number: decimal: ie 34.00, 34, 12e5; 64-bit floating point; -
           use multiplyand divide for high deciaml;
+
         hex: ie 0XFA; 
 
 
 Number methods: return number as string: number.tostring();
+
                 return number as exponential: number.toExponential();
+
                 return number with specific length: nember.toPrecision();
 
 
 Global methods: return variables as number: Number(); true-1, false-0, 12st-NaN;
+
                 return string as a whole number: parseInt();
+
                 return number object as actual number: valueof();
 
 
@@ -212,12 +242,15 @@ Math: objects:
 
 
 Date: format: can be string or number;
+
       display: document.getElementById("demo").innerHTML = Date();
+
       Date(99,5,24,11,33,30,0): Date in terms of  year, month, day, hour, minute, second, and millisecond;
       more at w3schools.com
 
 
 Array: used to store multiple values in a single variable;
+
        general format: var array-name = [item1, item2, ...];   
 
        arrays use numbers to access its "elements", <object> use names:
@@ -235,7 +268,9 @@ Array: used to store multiple values in a single variable;
                  associative array: var array=[]; array[1]=item1; ...
        
 Array vs object: <array is based on numberecd index, and object is based on named index>;
+
                  use objects when you want the element names to be strings(text);
+
                  use arrays when you want the element names to be numbers.
                  BUT typeof(array) returns object;
 
@@ -317,8 +352,7 @@ Data type conversion: see W3SCHOOL.COM
 Regular expressions: search and replace;
 
 
-Catch error: <script>
-             try {
+Catch error: try {
                Block of code to try throw " text/number/anything "
                  \\ these text/number is 'err'
              }
@@ -327,7 +361,6 @@ Catch error: <script>
              finally {
                Block of code to be executed regardless of the try / catch result
              }
-             </script>
 
 
 Declaration: ALWAYS declare variables upfront;
@@ -353,6 +386,7 @@ More tips on mistakes and performance at W3SCHOOL.COM
 
 
 Reserved words: see W3SCHOOL.COM
+
 
 
 
