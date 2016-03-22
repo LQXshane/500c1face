@@ -6,8 +6,6 @@
 #####To start with and most importantly, store this pair of unique keys in a secured place.
 
 
-*Access Key ID: AKIAJCHNZCKSDMAG6IZA*
-*Secret Access key: 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*
 
 
 #####Now, click and go to [Product Advertising API Scratchpad](http://webservices.amazon.com/scratchpad/index.html)
