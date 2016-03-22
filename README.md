@@ -9,7 +9,8 @@ Key components:
 * Link to Amazon Product advertising API
 
 The following files are used to maintian all subject related documents
-* AWS/ -- Amazon Wes Service
+* AWS -- Amazon Web Service
+* Product Advetising API
 * Datebase -- MySQL
 * Python code -- Python code
 * Webdesign -- all file related to dynamic website design
