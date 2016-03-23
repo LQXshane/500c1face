@@ -25,10 +25,10 @@ Here is a simple Itemsearch example, afterwards we are also able to *[Create a S
 <?php
 
 // Your AWS Access Key ID, as taken from the AWS Your Account page
-$aws_access_key_id = "AKIAJCHNZCKSDMAG6IZA";
+$aws_access_key_id = "****************";
 
 // Your AWS Secret Key corresponding to the above ID, as taken from the AWS Your Account page
-$aws_secret_key = "n8ybZeIuaUST60fDgNNfElV12vnCXa63J/eGLdTN";
+$aws_secret_key = "*********************************";
 
 // The region you are interested in
 $endpoint = "webservices.amazon.com";
@@ -38,8 +38,8 @@ $uri = "/onca/xml";
 $params = array(
     "Service" => "AWSECommerceService",
     "Operation" => "ItemSearch",
-    "AWSAccessKeyId" => "AKIAJCHNZCKSDMAG6IZA",
-    "AssociateTag" => "test09cf-20",
+    "AWSAccessKeyId" => "********************",
+    "AssociateTag" => "*********",
     "SearchIndex" => "Beauty",
     "Keywords" => "ROUGE DIOR",
     "ResponseGroup" => "Images,ItemAttributes,Offers",
@@ -87,8 +87,8 @@ echo "Signed URL: \"".$request_url."\"";
         </HTTPHeaders>
         <RequestId>6178b64f-6651-4a68-ac4c-62801f9e1b35</RequestId>
         <Arguments>
-            <Argument Name="AWSAccessKeyId" Value="AKIAJCHNZCKSDMAG6IZA"></Argument>
-            <Argument Name="AssociateTag" Value="test09cf-20"></Argument>
+            <Argument Name="AWSAccessKeyId" Value="**************************"></Argument>
+            <Argument Name="AssociateTag" Value="**********"></Argument>
             <Argument Name="Keywords" Value="ROUGE DIOR"></Argument>
             <Argument Name="Operation" Value="ItemSearch"></Argument>
             <Argument Name="ResponseGroup" Value="Images,ItemAttributes,Offers"></Argument>
