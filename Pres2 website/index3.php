@@ -28,7 +28,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <script type="text/Javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+
 
 </head>
 
@@ -37,9 +38,8 @@
 <?php include 'Nav.php';?>
 
     <!-- Header -->
-<em>
-<?php include 'Headerpres.php';?>
-</em>
+<?php include 'Header.php';?>
+
     <!-- About -->
 <?php include 'About.php';?>
 

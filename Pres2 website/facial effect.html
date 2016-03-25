@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <style>
+       .carousel-inner > .item > img,
+       .carousel-inner > .item > a > img {
+         width: 30%;
+         margin: auto;
+       }
+    </style>
+
+    <title>WitchA-facial effect</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script>
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover(); 
+      });
+   </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-warning btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >WITCHCRAFT</a>
+            </li>
+            <li>
+                <a href="homepage.html" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header id="top" class="header">
+      <div class="text-vertical-center"> 
+        <div class="container-fluid">
+          <div class="row">
+           <div class="col-sm-5 text-center">
+            <div class="form-group">
+             <label for="comment"><h2 class="text-photo">Photo Dispaly</h2></label>
+             <textarea class="form-control" rows="20" id="comment"></textarea>
+           </div>
+          </div>
+
+          <div class="col-sm-4 text-center">
+           <br><br><br><br><br><br><br><br><br>
+           <div class="row">
+            <div class="col-sm-4 text-center">
+              <div class="btn-group-vertical">
+                <button type="button" class="btn btn-F81C7C"><a id="popover" rel="popover" data-content="" title="ROUGE VOLUPTÉ SHINE OIL-IN-STICK" data-placement="right">Lipstick 1</a></button>
+                <button type="button" class="btn btn-AC0A22"><a href="#" data-toggle="popover" title="ROUGE PUR COUTURE SATIN RADIANCE LIPSTICK" data-content="Some content inside the popover">Lipstick 2</a></button>
+                <button type="button" class="btn btn-931459"><a href="#" data-toggle="popover" title="ROUGE PUR COUTURE KISS & LOVE COLLECTION" data-content="Some content inside the popover">Lipstick 3</a></button>
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <div class="btn-group-vertical">
+              <button type="button" class="btn btn-DBB895">Foundation 1</button>
+              <button type="button" class="btn btn-E3C9B2">Foundation 2</button>
+              <button type="button" class="btn btn-AD937A">Foundation 3</button>
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <div class="btn-group-vertical">
+              <button type="button" class="btn btn-6C4D4F">Eye Shadow 1</button>
+              <button type="button" class="btn btn-F1BDC9">Eye Shadow 2</button>
+              <button type="button" class="btn btn-A2837F">Eye Shadow 3</button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+         <div class="col-sm-3 text-center">
+          <iframe src="homepage.html" style="border:none" width="320" height="400"></iframe>
+         </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+ 
+<script>
+    var image = '<img src="img/lipstick 1.jpeg" width="118" height="178">';
+    $('#popover').popover({placement: 'bottom', content: image, html: true});
+</script>
+
+
+
+
+
+  
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
