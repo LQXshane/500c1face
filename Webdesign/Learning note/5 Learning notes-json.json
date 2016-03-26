@@ -4,14 +4,14 @@ Intro: JavaScript Object Notation;
 
        syntax for storing and exchanging data;
 
-       easier-to-use alternative to XML;
+--       easier-to-use alternative to XML;
 
        syntactically identical to the code for creating JavaScript objects;
 
-Syntax: JSON creates an array of objects and assign data to it;
+--Syntax: JSON creates an array of objects and assign data to it;
         
         example: 
-            "employees":[
+            "employees":[ /*[] is used for array, {} is for object*/
                 {"firstName":"John", "lastName":"Doe"},
                 {"firstName":"Anna", "lastName":"Smith"},
                 {"firstName":"Peter", "lastName":"Jones"}
@@ -50,7 +50,7 @@ Howto:  demonstrated by using a string as input (instead of a file):
 Function: read JSON data, using function files;
 
           1. create an array of object:
-             
+             /* real json array format */
              var myArray = [
              {
              "display": "JavaScript Tutorial",

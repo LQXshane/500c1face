@@ -5,10 +5,10 @@ Basics: CSS stands for Cascading Style Sheets
         comments: /*  */
 
 
-Syntax: selector and declaration: p {color: red;}
+--Syntax: selector and declaration: p {color: red;}
         element selector for a entire element: p <p>
-        class selector for a group of elements: .center <p class="center">
-        id selector for one element: #para1 <p id="para1">
+        class selector for a group of elements: p.center <p class="center">
+        id selector for one element: p#para1 <p id="para1">
         combine multiple selecters: 
             h1, h2, p {  }
             p.center {  }
@@ -33,7 +33,7 @@ Colors: see laerning notes html-Colors
 
 
 Background: <style="background-color: lightblue;">
-            body {background:url(../img/paper.jpg) no-repeat center center scroll/*can also be fixed*/}
+            body {background:url(../img/paper.jpg) //no-repeat center center scroll/*can also be fixed*/}
 
 
 Border: border width, style and color:
