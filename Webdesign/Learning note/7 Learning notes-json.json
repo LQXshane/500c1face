@@ -50,7 +50,7 @@ Howto:  demonstrated by using a string as input (instead of a file):
 Function: read JSON data, using function files;
 
           1. create an array of object:
-             /* real json array format */
+             /* this is the real json array format */
              var myArray = [
              {
              "display": "JavaScript Tutorial",
