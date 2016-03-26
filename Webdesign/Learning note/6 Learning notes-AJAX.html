@@ -1,6 +1,192 @@
 AJAX notes, *open with IDE, not browser*
 
-Intro: U don't need 
+
+//  this learning note is redundant with jquery/ajax function, they do the same job //
+
+
+Intro: U don't need to understand XML to use AJAX;
+       a web development technique for creating interactive web applications;
+       a web browser technology independent of web server software;
+       Data-driven as opposed to page-driven;
+       Data is stored in XML format and fetched from the server;
+       JavaScript to make everything happen;
+       The keystone of AJAX is the XMLHttpRequest object;
+
+       need to know DOM, javascript, css and html before u start;
+
+       example usign ajax: google map (can entire map without load webpage)
+
+//////////////////////////////////////////////////////////////////////////
+       
+XMLHttpRequest:
+The XMLHttpRequest object is used to exchange data with a server behind the scenes. 
+This means that it is possible to update parts of a web page, without reloading the whole page
+
+
+
+Request: use .open and .send;
+var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "demo_get.php", true);
+  xhttp.send();
+
+
+
+Receive: 
+responseText 	get the response data as a string
+responseXML 	get the response data as XML data
+
+
+
+Event: 
+onreadystatechange 	Stores a function (or the name of a function) to be called automatically each time the readyState property changes
+readyState 	Holds the status of the XMLHttpRequest. Changes from 0 to 4:
+ 0: request not initialized
+ 1: server connection established
+ 2: request received
+ 3: processing request
+ 4: request finished and response is ready
+status 	200: "OK"
+        404: Page not found
+
+Callback function: if u have more than one ajax working;
+
+/////////////////////////////////////////////////////////////////////////////
+
+PHP example: communicate with a web server while a user type characters in an input field:
+
+<html>
+<head>
+<script>
+function showHint(str) { 
+    if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
+
+<p><b>Start typing a name in the input field below:</b></p>
+<form>
+First name: <input type="text" onkeyup="showHint(this.value)">
+</form>
+<p>Suggestions: <span id="txtHint"></span></p>
+</body>
+</html>
+
+
+ <html>
+<head>
+<script>
+function showHint(str) {
+    if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
+
+<p><b>Start typing a name in the input field below:</b></p>
+<form>
+First name: <input type="text" onkeyup="showHint(this.value)">
+</form>
+<p>Suggestions: <span id="txtHint"></span></p>
+</body>
+</html>
+
+Code explanation:
+
+First, check if the input field is empty (str.length == 0). If it is, clear the content of the txtHint placeholder and exit the function.
+
+However, if the input field is not empty, do the following:
+
+    Create an XMLHttpRequest object
+    Create the function to be executed when the server response is ready
+    Send the request off to a PHP file (gethint.php) on the server
+    Notice that q parameter is added gethint.php?q="+str
+    The str variable holds the content of the input field
+
+The PHP File - "gethint.php"
+
+The PHP file checks an array of names, and returns the corresponding name(s) to the browser:
+
+<?php
+// Array with names
+$a[] = "Anna";
+$a[] = "Brittany";
+$a[] = "Cinderella";
+$a[] = "Diana";
+$a[] = "Eva";
+$a[] = "Fiona";
+$a[] = "Gunda";
+$a[] = "Hege";
+$a[] = "Inga";
+$a[] = "Johanna";
+$a[] = "Kitty";
+$a[] = "Linda";
+$a[] = "Nina";
+$a[] = "Ophelia";
+$a[] = "Petunia";
+$a[] = "Amanda";
+$a[] = "Raquel";
+$a[] = "Cindy";
+$a[] = "Doris";
+$a[] = "Eve";
+$a[] = "Evita";
+$a[] = "Sunniva";
+$a[] = "Tove";
+$a[] = "Unni";
+$a[] = "Violet";
+$a[] = "Liza";
+$a[] = "Elizabeth";
+$a[] = "Ellen";
+$a[] = "Wenche";
+$a[] = "Vicky";
+
+// get the q parameter from URL
+$q = $_REQUEST["q"];
+
+$hint = "";
+
+// lookup all hints from array if $q is different from ""
+if ($q !== "") {
+    $q = strtolower($q);
+    $len=strlen($q);
+    foreach($a as $name) {
+        if (stristr($q, substr($name, 0, $len))) {
+            if ($hint === "") {
+                $hint = $name;
+            } else {
+                $hint .= ", $name";
+            }
+        }
+    }
+}
+
+// Output "no suggestion" if no hint was found or output correct values
+echo $hint === "" ? "no suggestion" : $hint;
+?> 
 
 
 

@@ -3,7 +3,7 @@ PHP notes, *open with IDE, not browser*
 Intro: html, css and javascript based server side script language;
        
 
-Install: server must support PHP and SQL;
+--Install: server must support PHP and SQL; install apache on ubuntu;
   
          Webmatrix3: PHP, html, css, javascript, json
 
@@ -23,8 +23,6 @@ Varaibles:  see javascript learning notes for more detail;
 
             output variables: echo "I love $txt!"
 
-            a loosely typed language: no need to define data type;
-
             variable scope: variables can be defined anywhere in the script;
                global and local variable scope: 
                   variable declared outside a function can only be used outside; 
@@ -40,7 +38,7 @@ Varaibles:  see javascript learning notes for more detail;
                        static $x
 
 
-Echo/print: both used to display, but print has a return value of 1, slightly slower;
+--Echo/print: both used to display, but print has a return value of 1, slightly slower;
 
             echo: <?php
                   $x = 5;
@@ -52,10 +50,9 @@ Echo/print: both used to display, but print has a return value of 1, slightly sl
 
 Data type: string, integer, double, boolean;
            
-           array: <?php $cars = array("Volvo","BMW","Toyota"); ?>;
+--           array: <?php $cars = array("Volvo","BMW","Toyota"); ?>;
 
-           object: stores data and information on how to process that data;
-                   there can be arrya of objects: [{},{}];
+--           object: stores data and information on how to process that data; ie function;
 
 
 String: find length of string: echo strlen("Hello world!");
@@ -139,7 +136,9 @@ Array: $cars = array("Volvo", "BMW", "Toyota");
        $cars[0] = "Volvo";
 
 
-Superglobals: $GLOBALS: used to access global variables from anywhere in the PHP script;
+Superglobals: variables that always exist in php file;
+              
+              $GLOBALS: used to access global variables from anywhere in the PHP script;
               <?php
               $x = 75;
               $y = 25;
@@ -161,15 +160,16 @@ Superglobals: $GLOBALS: used to access global variables from anywhere in the PHP
               ?> 
               more at: http://www.w3schools.com/php/php_superglobals.asp
 
-              $_REQUEST: collect data after submitting an HTML form
+--              $_REQUEST: collect data after submitting an HTML form
 
-              $_POST: collect form data after submitting an HTML form with method="post"; 
+--              $_POST: collect form data after submitting an HTML form with method="post"; 
                 also widely used to pass variables.
 
-              $_GET: collect form data after submitting an HTML form with method="get"
+--              $_GET: collect form data after submitting an HTML form with method="get"
 
+//////////////////////////////////////////////////////////////////////////
 
-Forn handling: html side:
+Form handling: html side:
                <form action="welcome_get.php" method="get">
                Name: <input type="text" name="name"> </form>
                php side: 
@@ -188,9 +188,10 @@ Form validation: $_SERVER["PHP_SELF"] returns the filename of the currently exec
 
                  htmlspecialchars() function converts special characters to HTML entities;
 
-           Example:
+
+     Full  form  Example:
 <!DOCTYPE HTML>
-<html> // PHP still use html syntax
+<html> 
 <head>
 <style>
 .error {color: #FF0000;}
@@ -250,7 +251,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function test_input($data) {
    $data = trim($data);
    $data = stripslashes($data);
-   $data = htmlspecialchars($data);
+   $data = htmlspecialchars($data); // encrypt with http protacol
    return $data;
 }
 ?>
@@ -294,6 +295,8 @@ echo $gender;
 </html>
 
 
+/////////////////////////////////////////////////////////////////////
+
 Array handling: 
 <?php
 $cars = array
@@ -315,15 +318,24 @@ for ($row = 0; $row <  4; $row++) {
 ?>
 
 
-Include: thsi is how php build a website by including other blocks:
+--Include: thsi is how php build a website by including other blocks:
              <?php include 'menu.php';?>
              <?php include 'footer.php';?>
 
 
-File handling: 
+Read file: open->read->do sth->close; fopen, fread, fclose, fget, fgetc;
+<?php
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("webdictionary.txt"));
+fclose($myfile);
+?>
 
 
+Cookie:  used to identify a user, store in uses' computer;
 
+Session
+Filter
+Error handling
 
 
 
