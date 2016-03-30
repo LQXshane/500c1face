@@ -12,10 +12,8 @@
 > default for our project
 
 7. To make sure apache server is working properly, restart
-
 > sudo service apache2 restart
-> 
 8. Install mysql
 > mysql_secure_installation
 9. Test if you can command into your mysql query
-10. mysql -u root -p
+> mysql -u root -p
