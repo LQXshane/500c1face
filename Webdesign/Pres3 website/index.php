@@ -20,7 +20,7 @@
     <title>WitchA-homepage</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -46,12 +46,12 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
          <div class="container-fluid">
-                <h1>Welcome to Witch.</h1>
-                <h3>Try out make-ups from Amazon now</h3>
+                <h1 class="color">Welcome to Witcha</h1>
+                <h4>Try out make-ups from Amazon now</h4>
                 <br>
                 <a href="#about" class="btn3d btn-warning btn-lg">More About WitchA</a>
                 <br><br><br>
-                <a href="face_effect.php" class="btn3d btn-info btn-lg" target="_blank">Try WitchA Now</a>
+                <a href="faceEffect.php" class="btn3d btn-info btn-lg">Try WitchA Now</a>
                 <br><br><br>
                 <a href="http://www.amazon.com/" class="btn3d btn-success btn-lg" target="_blank">Checkout Amazon Now</a>
             </div>

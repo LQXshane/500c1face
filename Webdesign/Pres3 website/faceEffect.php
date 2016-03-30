@@ -30,8 +30,62 @@
     
 	<!-- JQuery -->
     <script type="text/Javascript" src="js/jquery.js"></script>
+    <script type="text/Javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-    <!-- Capture phote -->
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+    <?php require 'nav.php';?>
+
+
+    <!-- core -->
+    <header  class="header">
+    <div class="text-vertical-center">
+    <div class="container" id="top">
+        <div class="row">
+            <!-- Capturing photo -->
+            <div class="col-md-4 text-center">
+                <video id="video" width="320" height="240" autoplay><p id="video1"></p></video>
+                <button id="snap" class="btn3d btn-warning btn-lg">Snap Photo</button><br><br><br>
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <button onclick="UploadPic();return false;" class="btn3d btn-info btn-lg">Upload</button>
+            </div>
+
+            <!-- Color picker -->
+            <div class="col-md-4 text-center">
+                <button  class="btn3d btn-success btn-lg" id="r1">r1</button>
+                <button  class="btn3d btn-success btn-lg" id="r2">r2</button>
+                <br>
+                <br>
+                <div id="ajax"><img src="img/faceempty.png" alt="void"></img></div>
+                
+                
+            </div>
+
+            <!-- API -->
+            <div class="col-md-4 text-center">
+            </div>
+        </div>
+    </div>
+    </div>
+    </header>
+
+
+    <!-- Portfolio -->
+    <?php require 'portfolio.php';?>
+
+    <!-- Contact-->
+    <?php require 'contact.php';?>
+
+
+
+
+<!---------------------------------Jquery/ajax script---------------------------------->
+
+    <!-- Capture photo -->
     <script>
         // Put event listeners into place
         window.addEventListener("DOMContentLoaded", function () {
@@ -73,53 +127,66 @@
             //Triger camera
             document.getElementById("snap").addEventListener("click", function () {
                 context.drawImage(video, 0, 0, 320, 240);
-            });
+            })
         }, false);
+    </script>
 
+    <!-- Upload Photo -->
+    <script>
+        function UploadPic() {
+            var Pic = document.getElementById("canvas").toDataURL("image/jpeg");
+            var ajax = new XMLHttpRequest();
+            ajax.open("POST",'savePicture.php',false);
+            ajax.setRequestHeader('Content-Type', 'application/upload');
+            ajax.send(Pic);
+        }
+    </script>
+
+    <!-- Facial processing -->
+    <script>
+        $(document).ready(function () {
+            $("#r1").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: 'rotate.php',
+                    data: { action: 'r1' },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+                window.setTimeout($("#ajax").html('<img src="pythonImg/facer1.jpeg" style="height: 240px;width: 320px;"></img>'), 2000);
+
+            });
+            $("#r2").click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: 'rotate.php',
+                    data: { action: 'r2' },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+                window.setTimeout($("#ajax").html('<img src="pythonImg/facer2.jpeg" style="height: 240px;width: 320px;"></img>'), 2000);
+            });
+        })
 
     </script>
 
-</head>
+    
 
+    <!--$("#ajax").html('<img src="pythonImg/facer1.jpg" style="height: 240px;width: 320x;"></img>');-->
 
-
-<body>
-
-    <!-- Navigation -->
-    <?php require 'nav.php';?>
-
-
-    <!-- core -->
-    <header  class="header">
-    <div class="container" id="top">
-        <div class="row">
-            <!-- Capturing photo -->
-            <div class="col-md-4 text-center">
-                <video id="video" width="320" height="240" autoplay><p id="video1"></p></video>
-                <button id="snap" class="btn3d btn-warning btn-lg">Snap Photo</button><br><br><br>
-                <canvas id="canvas" width="320" height="240"></canvas>
-            </div>
-
-            <!-- Color picker -->
-            <div class="col-md-4 text-center">
-            </div>
-
-            <!-- API -->
-            <div class="col-md-4 text-center">
-            </div>
-        </div>
-    </div>
-    </header>
-
-
-    <!-- Portfolio -->
-    <?php require 'portfolio.php';?>
-
-    <!-- Contact-->
-    <?php require 'contact.php';?>
-
-
-<!-------------------------------------------------------------------------------------->
+<!---------------------------------WebPage script------------------------------------------>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -158,12 +225,6 @@
         });
     });
     </script>
-
-    <!-- camera -->
-    
-
-
-
 
 </body>
 
