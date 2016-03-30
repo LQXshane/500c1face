@@ -17,3 +17,4 @@
 > mysql_secure_installation
 9. Test if you can command into your mysql query
 > mysql -u root -p
+
