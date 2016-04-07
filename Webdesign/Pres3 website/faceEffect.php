@@ -137,7 +137,7 @@
             var Pic = document.getElementById("canvas").toDataURL("image/jpeg");
             var ajax = new XMLHttpRequest();
             ajax.open("POST",'savePicture.php',false);
-            ajax.setRequestHeader('Content-Type', 'application/upload');
+            ajax.setRequestHeader('Content-Type', 'image/jpeg');
             ajax.send(Pic);
         }
     </script>
