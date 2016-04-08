@@ -1,25 +1,14 @@
+<?php    
+define('UPLOAD_DIR', 'uploads/');
+$img = $_POST['imgBase64'];
+$img = str_replace('data:image/png;base64,', '', $img);
+$img = str_replace(' ', '+', $img);
+$data = base64_decode($img);
+$file = UPLOAD_DIR . uniqid() . '.png';
+$success = file_put_contents($file, $data);
+print $success ? $file : 'Unable to save the file.';
+?> 
 
-
-document.getElementById("r2").addEventListener("click", function LoadImg(filename) {
-                    var xmlhttp;
-                    xmlhttp = new XMLHttpRequest();
-                    xmlhttp.onreadystatechange = function () {
-                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                            document.getElementById("ajax").src = "data:image/jpg;base64," + xmlhttp.responseText;
-                        }
-                    };
-                    xmlhttp.open("GET", 'rotate1.php?LoadImg=' + filename);
-                    xmlhttp.send(null);
-                }
-             })
-
-
-
-if (isset($_GET['LoadImg'])) {
-    header("Content-Type: image/jpg");
-    $file = file_get_contents("pythonImg/facer1.jpg");
-    echo base64_encode($file);
-}
 
 
 <!-- Get image from server -->
