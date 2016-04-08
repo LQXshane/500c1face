@@ -139,6 +139,7 @@
             ajax.open("POST",'savePicture.php',false);
             ajax.setRequestHeader('Content-Type', 'image/jpeg');
             ajax.send(Pic);
+            console.log(Pic)
         }
     </script>
 
@@ -158,7 +159,7 @@
                         console.log("error");
                         console.log(data);
                     }
-                });$("#ajax").html('<img src="facer1.jpeg" style="height: 240px;width: 320px;"></img>')
+                });$("#ajax").html('<img src="face.jpeg" style="height: 240px;width: 320px;"></img>')
 
             });
             $("#r2").click(function () {
