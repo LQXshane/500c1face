@@ -136,10 +136,9 @@
         function UploadPic() {
             var Pic = document.getElementById("canvas").toDataURL("image/jpeg");
             var ajax = new XMLHttpRequest();
-            ajax.open("POST", 'savePicture.php', false);
+            ajax.open("POST",'savePicture.php',false);
             ajax.setRequestHeader('Content-Type', 'image/jpeg');
             ajax.send(Pic);
-            console.log(Pic);
         }
     </script>
 
@@ -159,8 +158,7 @@
                         console.log("error");
                         console.log(data);
                     }
-                });
-                window.setTimeout($("#ajax").html('<img src="pythonImg/facer1.jpeg" style="height: 240px;width: 320px;"></img>'), 2000);
+                });$("#ajax").html('<img src="facer1.jpeg" style="height: 240px;width: 320px;"></img>')
 
             });
             $("#r2").click(function () {
@@ -177,7 +175,7 @@
                         console.log(data);
                     }
                 });
-                window.setTimeout($("#ajax").html('<img src="pythonImg/facer2.jpeg" style="height: 240px;width: 320px;"></img>'), 2000);
+                window.setTimeout($("#ajax").html('<img src="facer2.jpeg" style="height: 240px;width: 320px;"></img>'), 5000);
             });
         })
 
