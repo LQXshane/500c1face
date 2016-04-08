@@ -50,8 +50,8 @@
             <div class="col-md-4 text-center">
                 <video id="video" width="320" height="240" autoplay><p id="video1"></p></video>
                 <button id="snap" class="btn3d btn-warning btn-lg">Snap Photo</button><br><br><br>
-                <canvas id="Canvas" width="320" height="240"></canvas>
-                <button id="UpLoad" class="btn3d btn-info btn-lg">Upload</button>
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <button onclick="UploadPic()" class="btn3d btn-info btn-lg">Upload</button>
             </div>
 
             <!-- Color picker -->
@@ -90,7 +90,7 @@
         // Put event listeners into place
         window.addEventListener("DOMContentLoaded", function () {
             // Grab elements, create settings, etc.
-            var canvas = document.getElementById("Canvas"),
+            var canvas = document.getElementById("canvas"),
                 context = canvas.getContext("2d"),
                 video = document.querySelector('video'),
                 videoObj = { "video": true },
@@ -128,28 +128,14 @@
 
     <!-- Upload Photo -->
     <script>
-        $(document).ready(function () {
-            $("#UpLoad").click(function () { // trick by a button
-                var canVas = $('#Canvas')[0];
-                var dataURL = canVas.toDataURL();
-                $.ajax({
-                    type: "POST",
-                    url: 'savePicture.php',
-                    data: { 
-                        imgBase64: dataURL
-                    },
-                    cache: false,
-                    success: function (data) {
-                        console.log("success");
-                        console.log(data);
-                    },
-                    error: function (data) {
-                        console.log("error");
-                        console.log(data);
-                    }
-                });
-            });
-        });
+        function UploadPic() {
+            var Pic = document.getElementById("canvas").toDataURL("image/jpeg");
+            var ajax = new XMLHttpRequest();
+            ajax.open("POST",'savePicture.php',false);
+            ajax.setRequestHeader('Content-Type', 'image/jpeg');
+            ajax.send(Pic);
+            console.log(Pic)
+        }
     </script>
 
     <!-- Facial processing -->
@@ -169,7 +155,7 @@
                         console.log(data);
                     }
                 });
-                window.setTimeout($("#ajax").html('<img src="pythonImg/facer1.jpeg" style="height: 240px;width: 320px;"></img>'), 1000);
+                window.setTimeout($("#ajax").html('<img src="pythonImg/facer1.jpeg" style="height: 240px;width: 320px;"></img>'), 3000);
 
             });
             $("#r2").click(function () {
@@ -186,7 +172,7 @@
                         console.log(data);
                     }
                 });
-                window.setTimeout($("#ajax").html('<img src="pythonImg/test.jpeg" style="height: 240px;width: 320px;"></img>'), 1000);
+                window.setTimeout($("#ajax").html('<img src="pythonImg/facer2.jpeg" style="height: 240px;width: 320px;"></img>'), 3000);
             });
         })
 
