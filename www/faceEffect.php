@@ -186,7 +186,7 @@
                         console.log(data);
                     }
                 });
-                window.setTimeout($("#ajax").html('<img src="pythonImg/facer2.jpeg" style="height: 240px;width: 320px;"></img>'), 1000);
+                window.setTimeout($("#ajax").html('<img src="pythonImg/test.jpeg" style="height: 240px;width: 320px;"></img>'), 1000);
             });
         })
 
