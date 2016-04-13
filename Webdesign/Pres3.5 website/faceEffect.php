@@ -73,8 +73,9 @@
                     <button type="button" id="lc8" onclick="lc8()"></button>
                     <button type="button" id="lc9" onclick="lc9()"></button>
                     <button type="button" id="lc10" onclick="lc10()"></button>
-
                 </div>
+
+                <br><br>
 
                 <img id="ajax" width="320" height="240"></img>
                                 
@@ -100,7 +101,7 @@
 
 <!---------------------------------Jquery/ajax script---------------------------------->
 
-    <!-- Capture photo -->
+<!-- Capture photo -->
     <script>
         // Put event listeners into place
         window.addEventListener("DOMContentLoaded", function () {
@@ -141,7 +142,9 @@
 
     </script>
 
-    <!-- Upload Photo -->
+
+
+<!-- Upload Photo -->
     <script>
         function UploadPic() {
             var Pic = document.getElementById("canvas").toDataURL("image/jpeg");
@@ -155,26 +158,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Facial processing -->
+<!-- database connection -->
     <script>
         $(document).ready(function () {
-
-
-
             $("#btngrp-lip").hide();
-
-
 
             $("#lipstick").click(function () {
                 $("#btngrp-lip").toggle()
@@ -281,19 +268,11 @@
             xmlhttp.send(null);
 
         }
-
-
-
-
-
-
     </script>
 
 
 
 
-
-    <!--$("#ajax").html('<img src="pythonImg/facer1.jpg" style="height: 240px;width: 320x;"></img>');-->
 
 <!---------------------------------WebPage script------------------------------------------>
 
