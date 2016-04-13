@@ -10,9 +10,9 @@ Key components:
 
 The following files are used to maintian all subject related documents
 * AWS -- Amazon Web Service & Product Advetising API
-* Datebase -- MySQL
+* Datebase -- MySQL files
 * Python code -- Python code
-* Webdesign -- all file related to dynamic website design
+* Webdesign -- all files related to dynamic website design for this project
 
 To be continued
 
