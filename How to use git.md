@@ -26,3 +26,4 @@ Make sure the files and folders are on the directary on git, use 'cd' to change
    replace add with rm -r
 9. clean up files and directory: 'git clean -dx' and 'git clean -fx'
 
+
