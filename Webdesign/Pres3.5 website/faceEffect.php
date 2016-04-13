@@ -40,54 +40,63 @@
 
     <!-- core -->
     <header  class="header">
-    <div class="text-vertical-center">
-    <div class="container" id="top">
-        <div class="row">
-            <!-- Capturing photo -->
-            <div class="col-md-4 text-center">
-                <video id="video" width="320" height="240" autoplay><p id="video1"></p></video>
-                <button id="snap" class="btn3d btn-warning btn-lg">Snap Photo</button><br><br><br>
-                <canvas id="canvas" width="320" height="240"></canvas>
-                <button onclick="UploadPic()" class="btn3d btn-info btn-lg">Upload</button>
-            </div>
+        <div class="text-vertical-center">
+            <div class="container" id="top">
+                <div class="row">
 
-            <!-- Color picker -->
-            <div class="col-md-4 text-center">
+                <!-- Capturing photo -->
+                    <div class="col-md-4 text-center">
+                        <video id="video" width="320" height="240" autoplay><p id="video1"></p></video>
+                        <button id="snap" class="btn3d btn-warning btn-lg">Snap Photo</button><br><br><br>
+                        <canvas id="canvas" width="320" height="240"></canvas>
+                        <button onclick="UploadPic()" class="btn3d btn-info btn-lg">Upload</button>
+                    </div>
 
 
-                <div id="itemlipstick"></div>
+                <!-- Color picker -->
+                    <div class="col-md-4 text-center">
+                        <button  class="btn3d btn-danger btn-lg" id="lipstick">Lipstick</button>
 
-                <button  class="btn3d btn-danger btn-lg" id="lipstick">Lipstick</button>
-                <br> 
+                        <br>
+                        <br>
+                        <br>
 
-                <div class="btn-group" id="btngrp-lip">
-                    <button type="button" id="lc1"></button>
-                    <button type="button" id="lc2"></button>
-                    <button type="button" id="lc3"></button>
-                    <button type="button" id="lc4"></button>
-                    <button type="button" id="lc5"></button>
-                    <br>
-                    <br>
-                    <button type="button" id="lc6"></button>
-                    <button type="button" id="lc7"></button>
-                    <button type="button" id="lc8" onclick="lc8()"></button>
-                    <button type="button" id="lc9" onclick="lc9()"></button>
-                    <button type="button" id="lc10" onclick="lc10()"></button>
+                        <div class="btn-group" id="btngrp-lip">
+                            <button type="button" id="lc0"></button>
+                            <button type="button" id="lc1"></button>
+                            <button type="button" id="lc2"></button>
+                            <button type="button" id="lc3"></button>
+                            <button type="button" id="lc4"></button>
+                            <br>
+                            <br>
+                            <button type="button" id="lc5"></button>
+                            <button type="button" id="lc6"></button>
+                            <button type="button" id="lc7" onclick="lc7()"></button>
+                            <button type="button" id="lc8" onclick="lc8()"></button>
+                            <button type="button" id="lc9" onclick="lc9()"></button>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <img id="ajax" width="320" height="240"></img>
+                        <br>
+                        <br>
+
+                    <!--panel content -->
+                        <div id="panel" class="text-align: center">
+                            <a href="https://amazon.com" onclick="window.opener.location.href=this.href;window.close()">Click here</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                    </div>
                 </div>
-
-                <br><br>
-
-                <img id="ajax" width="320" height="240"></img>
-                                
-            </div>
-
-            <!-- API -->
-            <div class="col-md-4 text-center">
             </div>
         </div>
-    </div>
-    </div>
     </header>
+
+
 
 
     <!-- Portfolio -->
@@ -163,10 +172,10 @@
         $(document).ready(function () {
             $("#btngrp-lip").hide();
 
-            $("#lipstick").click(function () {
+            $("#lipstick").click( function () {
                 $("#btngrp-lip").toggle()
 
-                $.ajax({
+                $.ajax( {
                     type: "POST",
                     url: 'getcolorinfo.php',
                     data: { action: 'lipstick' },
@@ -176,48 +185,50 @@
                         var data1 = jQuery.parseJSON(data);
                         console.log(data1);
                         $.each(data1, function (key, item) {
-                            if (key == "0") {
-                                $("#lc1").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="0"){
+                            $("#lc0").html(item.Brand).css("background-color",item.Color_code)
+                            }   
+                            if(key=="1"){
+                            $("#lc1").html(item.Brand).css("background-color",item.Color_code)
                             }
-                            if (key == "1") {
-                                $("#lc2").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="2"){
+                            $("#lc2").html(item.Brand).css("background-color",item.Color_code)
                             }
-                            if (key == "2") {
-                                $("#lc3").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="3"){
+                            $("#lc3").html(item.Brand).css("background-color",item.Color_code)
                             }
-                            if (key == "3") {
-                                $("#lc4").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="4"){
+                            $("#lc4").html(item.Brand).css("background-color",item.Color_code)
                             }
-                            if (key == "4") {
-                                $("#lc5").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="5"){
+                            $("#lc5").html(item.Brand).css("background-color",item.Color_code)
                             }
-                            if (key == "5") {
-                                $("#lc6").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="6"){
+                            $("#lc6").html(item.Brand).css("background-color",item.Color_code)
                             }
-                            if (key == "6") {
-                                $("#lc7").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="7"){
+                            lc7colorcode = item.Color_code;
+                            $("#lc7").html(item.Brand).css("background-color",item.Color_code);
                             }
-                            if (key == "7") {
-                                $("#lc8").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="8"){
+                            lc8colorcode = item.Color_code;
+                            $("#lc8").html(item.Brand).css("background-color",item.Color_code);
                             }
-                            if (key == "8") {
-                                $("#lc9").html(item.Brand).css("background-color", item.Color_code);
+                            if(key=="9"){
+                            lc9colorcode = item.Color_code;
+                            $("#lc9").html(item.Brand).css("background-color",item.Color_code);
                             }
-                            if (key == "9") {
-                                $("#lc10").html(item.Brand).css("background-color", item.Color_code);
-                            }
-                        });
+                        })
                     },
                     error: function (data) {
                         console.log("error");
                         console.log(data);
                     }
 
-                });
+                })
             });
+
         });
-
-
 
     </script>
 
@@ -264,7 +275,7 @@
                     console.log(xmlhttp.response);
                 }
             };
-            xmlhttp.open("GET", 'sendpyimg.php', true);
+            xmlhttp.open("POST", 'sendpyimg.php', true);
             xmlhttp.send(null);
 
         }
