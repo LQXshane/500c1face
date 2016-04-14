@@ -27,7 +27,6 @@
     
 	<!-- JQuery -->
     <script type="text/Javascript" src="js/jquery.js"></script>
-    <script type="text/Javascript" src="js/jquery.base64.js"></script>
 
 </head>
 
