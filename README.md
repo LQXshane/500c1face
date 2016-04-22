@@ -14,6 +14,4 @@ The following files are used to maintian all subject related documents
 * Python code -- Python code
 * Webdesign -- all files related to dynamic website design for this project
 
-To be continued
 
-![alt text](/Pres1 website/img/slideshow4.png)
