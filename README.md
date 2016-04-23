@@ -70,21 +70,13 @@ This README.txt file is mainly focusing on the final version (pres4 website).
   * Apache server
     * MySQL
       * mysqli_connection.php
-     |
-     | ---PHP
-         |
-         | --css
-         |
-         | --img
-         |
-         | --js
-         |
-         | --dlib
-         |  |
-         |  | --eyebrow.py/facedect.py
-         |
-         | --cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php
-            /nav.php/protfolio.phpsavePicture.php/sendpyimg.php/sendpyimgeye.php
+      * PHP
+        * css
+        * img
+        * js
+        * dlib
+          * eyebrow.py/facedect.py
+        * cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php/nav.php/protfolio.phpsavePicture.php/sendpyimg.php/sendpyimgeye.php
             
 * AWS screenshot -- the screenshot of content in AWS
 * cc.txt -- the color code the frontend sent for python script
