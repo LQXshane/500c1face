@@ -67,24 +67,35 @@
                 <!-- Color picker -->
                     <div class="col-md-4 text-center">
                         <button  class="btn3d btn-danger btn-lg" id="lipstick">Lipstick</button>
+                        <button  class="btn3d btn-success btn-lg" id="eyeshadow">Eyeshadow</button>
 
                         <br>
                         <br>
 
                         <div class="btn-group" id="btngrp-lip">
-                            <button type="button" id="lc0" onclick="lc0()"></button>
-                            <button type="button" id="lc1" onclick="lc1()"></button>
-                            <button type="button" id="lc2" onclick="lc2()"></button>
-                            <button type="button" id="lc3" onclick="lc3()"></button>
-                            <button type="button" id="lc4" onclick="lc4()"></button>
+                            <button type="button" id="lc0" class="btn4d btn-default" onclick="lc0()"></button>
+                            <button type="button" id="lc1" class="btn4d btn-default" onclick="lc1()"></button>
+                            <button type="button" id="lc2" class="btn4d btn-default" onclick="lc2()"></button>
+                            <button type="button" id="lc3" class="btn4d btn-default" onclick="lc3()"></button>
+                            <button type="button" id="lc4" class="btn4d btn-default" onclick="lc4()"></button>
                             <br>
-                            <br>
-                            <button type="button" id="lc5" onclick="lc5()"></button>
-                            <button type="button" id="lc6" onclick="lc6()"></button>
-                            <button type="button" id="lc7" onclick="lc7()"></button>
-                            <button type="button" id="lc8" onclick="lc8()"></button>
-                            <button type="button" id="lc9" onclick="lc9()"></button>
+                            <button type="button" id="lc5" class="btn4d btn-default" onclick="lc5()"></button>
+                            <button type="button" id="lc6" class="btn4d btn-default" onclick="lc6()"></button>
+                            <button type="button" id="lc7" class="btn4d btn-default" onclick="lc7()"></button>
+                            <button type="button" id="lc8" class="btn4d btn-default" onclick="lc8()"></button>
+                            <button type="button" id="lc9" class="btn4d btn-default" onclick="lc9()"></button>
+
                         </div>
+
+                        <div class="btn-group" id="btngrp-eye">
+                            <button type="button" id="lb0" class="btn4d btn-default" onclick="lb0()"></button>
+                            <button type="button" id="lb1" class="btn4d btn-default" onclick="lb1()"></button>
+                            <button type="button" id="lb2" class="btn4d btn-default" onclick="lb2()"></button>
+                            <button type="button" id="lb3" class="btn4d btn-default" onclick="lb3()"></button>
+                            <button type="button" id="lb4" class="btn4d btn-default" onclick="lb4()"></button>
+                        </div>
+
+
 
                         <br>
                         <br>
@@ -187,7 +198,7 @@
             $("#lipstick").click( function () {
                 $("#btngrp-lip").toggle()
 
-                $.ajax( {
+                $.ajax({
                     type: "POST",
                     url: 'getcolorinfo.php',
                     data: { action: 'lipstick' },
@@ -289,6 +300,56 @@
                                 $("#product").html(item.Product);
                             });});
                             }
+
+
+                            if(key=="0"){
+                                lb0colorcode = item.Color_code;
+                                $("#lb0").html(item.Brand).css({"background-color":item.Color_code,"color":"white"}).hover(function(){
+                                    $(this).click(function(){$("#panel").show()
+                                    $("#url").attr("src",item.ImgUrl);
+                                    $("#product").html(item.Product);
+                            });});
+                            }
+
+                            if(key=="1"){
+                                lb1colorcode = item.Color_code;
+                            $("#lb1").html(item.Brand).css({"background-color":item.Color_code,"color":"white"}).hover(function(){
+                                $(this).click(function(){$("#panel").show()
+                                $("#url").attr("src",item.ImgUrl);
+                                $("#product").html(item.Product);
+                            });});
+                            }
+
+
+                            if(key=="2"){
+                                lb2colorcode = item.Color_code;
+                            $("#lb2").html(item.Brand).css({"background-color":item.Color_code,"color":"white"}).hover(function(){
+                                $(this).click(function(){$("#panel").show()
+                                $("#url").attr("src",item.ImgUrl);
+                                $("#product").html(item.Product);
+                            });});
+                            }
+
+                            if(key=="3"){
+                                lb3colorcode = item.Color_code;
+                            $("#lb3").html(item.Brand).css({"background-color":item.Color_code,"color":"white"}).hover(function(){
+                                $(this).click(function(){$("#panel").show()
+                                $("#url").attr("src",item.ImgUrl);
+                                $("#product").html(item.Product);
+                            });});
+                            }
+
+                            if(key=="4"){
+                                lb4colorcode = item.Color_code;
+                            $("#lb4").html(item.Brand).css({"background-color":item.Color_code,"color":"white"}).hover(function(){
+                                $(this).click(function(){$("#panel").show()
+                                $("#url").attr("src",item.ImgUrl);
+                                $("#product").html(item.Product);
+                            });});
+                            }
+
+
+
 
 
                         })
@@ -463,6 +524,86 @@
                 });
             });
 
+            $("#lb0").click( function () {
+                $.ajax( {
+                    type: "POST",
+                    url: 'sendpyimgeye.php',
+                    data: { action: lb0colorcode },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+            });
+
+            $("#lb1").click( function () {
+                $.ajax( {
+                    type: "POST",
+                    url: 'sendpyimgeye.php',
+                    data: { action: lb1colorcode },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+            });
+
+            $("#lb2").click( function () {
+                $.ajax( {
+                    type: "POST",
+                    url: 'sendpyimgeye.php',
+                    data: { action: lb2colorcode },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+            });
+
+            $("#lb3").click( function () {
+                $.ajax( {
+                    type: "POST",
+                    url: 'sendpyimgeye.php',
+                    data: { action: lb3colorcode },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+            });
+
+            $("#lb4").click( function () {
+                $.ajax( {
+                    type: "POST",
+                    url: 'sendpyimgeye.php',
+                    data: { action: lb4colorcode },
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log("error");
+                        console.log(data);
+                    }
+                });
+            });
+
 
         });
 
@@ -608,8 +749,77 @@
             };
             xmlhttp.open("GET", 'sendpyimg.php', true);
             xmlhttp.send(null);
-
         }
+
+
+        function lb0(filename) {
+            var xmlhttp = new XMLHttpRequest;
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("ajax").src = "data:image/jpeg;base64," + xmlhttp.responseText;
+                    console.log(xmlhttp.response);
+                }
+            };
+            xmlhttp.open("GET", 'sendpyimgeye.php', true);
+            xmlhttp.send(null);
+        }
+
+
+        function lb1(filename) {
+            var xmlhttp = new XMLHttpRequest;
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("ajax").src = "data:image/jpeg;base64," + xmlhttp.responseText;
+                    console.log(xmlhttp.response);
+                }
+            };
+            xmlhttp.open("GET", 'sendpyimgeye.php', true);
+            xmlhttp.send(null);
+        }
+
+        function lb2(filename) {
+            var xmlhttp = new XMLHttpRequest;
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("ajax").src = "data:image/jpeg;base64," + xmlhttp.responseText;
+                    console.log(xmlhttp.response);
+                }
+            };
+            xmlhttp.open("GET", 'sendpyimgeye.php', true);
+            xmlhttp.send(null);
+        }
+
+        function lb3(filename) {
+            var xmlhttp = new XMLHttpRequest;
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("ajax").src = "data:image/jpeg;base64," + xmlhttp.responseText;
+                    console.log(xmlhttp.response);
+                }
+            };
+            xmlhttp.open("GET", 'sendpyimgeye.php', true);
+            xmlhttp.send(null);
+        }
+
+        function lb4(filename) {
+            var xmlhttp = new XMLHttpRequest;
+
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("ajax").src = "data:image/jpeg;base64," + xmlhttp.responseText;
+                    console.log(xmlhttp.response);
+                }
+            };
+            xmlhttp.open("GET", 'sendpyimgeye.php', true);
+            xmlhttp.send(null);
+        }
+
+
+
 
     </script>
 
