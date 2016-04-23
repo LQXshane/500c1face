@@ -77,7 +77,7 @@ This README.txt file is mainly focusing on the final version (pres4 website).
       * dlib
         * eyebrow.py/facedect.py
       * cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php/nav.php/protfolio.phpsavePicture.php/sendpyimg.php/sendpyimgeye.php
-            
+
 * AWS screenshot -- the screenshot of content in AWS
 * cc.txt -- the color code the frontend sent for python script
 * contact.php -- all webpages use this, it is the contact section of the frontend
