@@ -17,13 +17,21 @@ This folder contains the following information:
 
 
 * Witch101_LipsticksDB
->originally collected information during development process. All info is now on the server. A manual is also included to show how to upload the forementioned info onto EC2 instances.
+
+
+> originally collected information during development process. All info is now on the server. A manual is also included to show how to upload the forementioned info onto EC2 instances.
+
 * timecoverspider
->a successful attempt to crawl images from time magazine website. We should dig deep into this and develop our own crawler for beauty products.
+
+> A successful attempt to crawl images from time magazine website. We should dig deep into this and develop our own crawler for beauty products.
+
 * backlog
->some other expolartory moves I made. 
+
+> Some other expolartory moves I made. Contains very informative dbs if one wants to look into face recognition(w.r.t makeups)
+
 * test_connection.jpg
->A demo to show sucessful connection between MySQL and other functionalities.
+
+> A demo to show sucessful connection between MySQL and other functionalities.
 
 
 
