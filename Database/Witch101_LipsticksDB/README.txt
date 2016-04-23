@@ -1,3 +1,6 @@
+####Below is a sample manipulation log file that I used to update DB on the EC2 instance.
+
+
 Last login: Sat Apr 23 16:39:25 on ttys000
 -bash: /usr/local/bin/virtualenvwrapper.sh: No such file or directory
 29-55-41-155-wireless1x:~ Shane$ cd Desktop/Project\ History/
