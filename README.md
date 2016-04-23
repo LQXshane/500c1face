@@ -67,27 +67,27 @@ Each sprint has more features added to it:
 This README.txt file is mainly focusing on the final version (pres4 website).
 EC2
 |
-|--Python/opencv
+| --Python/opencv
 |
-|--Apache server
+| --Apache server
      |
-     |---MySQL
+     | ---MySQL
      |   |
-     |   |--mysqli_connection.php
+     |   | --mysqli_connection.php
      |
-     |---PHP
+     | ---PHP
          |
-         |--css
+         | --css
          |
-         |--img
+         | --img
          |
-         |--js
+         | --js
          |
-         |--dlib
+         | --dlib
          |  |
-         |  |--eyebrow.py/facedect.py
+         |  | --eyebrow.py/facedect.py
          |
-         |--cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php
+         | --cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php
             /nav.php/protfolio.phpsavePicture.php/sendpyimg.php/sendpyimgeye.php
             
 * AWS screenshot -- the screenshot of content in AWS
