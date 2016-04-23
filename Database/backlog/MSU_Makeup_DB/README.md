@@ -3,7 +3,7 @@ Documentation for the three makeup datasets could be found at:
 
 If you are interested in this subject and would like to have access to these DBs, you should also visit the above site and write an email application.
 
-Brief information and I quote,
+Brief introduction and I quote,
 
 >YMU (YouTube Makeup dataset): Images obtained in 2012 from YouTube makeup tutorials corresponding to 151 Caucasian female subjects with 2 images before makeup and 2 images after makeup for each subject. Makeup varies from subtle to heavy. This dataset includes some variations in expression and pose. The illumination condition is reasonably constant over multiple shots of the same subject. In few cases, the hair style before and after makeup changes drastically. 
 
