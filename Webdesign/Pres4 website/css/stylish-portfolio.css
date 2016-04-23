@@ -30,6 +30,24 @@ body {
 }
 
 /* Custom Button Styles */
+.btn4d {
+    transition: all .08s linear;
+    position: relative;
+    outline: medium none;
+    -moz-outline-style: none;
+    border: 0px;
+    margin-top: 15px;
+    top: 0;
+}
+.btn4d:focus {
+    outline: medium none;
+    -moz-outline-style: none;
+}
+.btn4d:active {
+    top: 9px;
+}
+.btn4d.btn-default {
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #8c6244,  0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
 
 
 
