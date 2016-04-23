@@ -1,20 +1,20 @@
-# EC500C1 Face Recognition/Makeup Project: WITCH
+### WITCH: EC500C1 Face Recognition/Makeup Project
 
-> Hello World. We're team Witch from ECE department, Boston University.
+> Hello World. We're team "Witch" from ECE department, Boston University.
 Witch is a curriculum-based software application team project. A core technology objective was given to us, face recognition, and we have sucessfully transformed it in terms of building a real-world executable and marketable application. 
-#####The idea is to utilize facial landmark detection for virtual makeup, and beyond that, we wanted to make recommendations or suggestions based on the makeups that our customer have just tried on. We believe that technology have simlified a lot of things and Witch will be another proof- it reduces the time cost and eliminates hygene concerns for women shopping for beauty products and who knows, men could also use Witch to pick out a *perfect* present for their girl.
+#####The idea is to utilize facial landmark detection for virtual makeup, and beyond that, we wanted to make recommendations or suggestions based on the makeups that our customer have just tried on. We believe that technology have simlified a lot of things and Witch will be another proof- it reduces the time cost and eliminates hygene concerns for women shopping for beauty products and who knows, men could also use our "witchcraft" to pick out a *perfect* present for their girl. ;)
 
 >Witch Tells You Which. :)
 
 
 ## Introduction
-So far, we have pulled out a web-based application hosted by cloudfront computer server. Such main functionalities are:
-lipcolor and eyebrow virtual try-out and live-time recommendation links that leads you to the purchasing page. These are achieved by:
+So far, we have pulled out a web-based application hosted by cloudfront computer server. Such main functionalities are
+lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to the purchasing page. These are achieved by:
 
 * Web app design
 * Host web app and Python code on Amazon AWS
-* Virtual effect processed through Python with dlib and OpenCV
-* Link to Amazon Product advertising API
+* Virtual effect processed through Python with dlib and OpenCV bindings
+* Amazon Product advertising/ItemLookup API
 
 The following files are used to maintian all subject related documents
 * AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
