@@ -7,7 +7,7 @@ Witch is a curriculum-based software application team project. A core technology
 >Witch Tells You Which. 
 
 
-## Introduction
+#### Introduction
 So far, we have pulled out a web-based application hosted by cloudfront computer server. Such main functionalities are
 lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to the purchasing page. These are achieved by:
 
@@ -17,7 +17,7 @@ lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to 
 * Amazon Product advertising/ItemLookup API
 
 --------------------------------------------------------------------------------------
-## How to use the web app:
+#### How to use the web app:
 * open it with firefox: http://ec2-54-173-250-109.compute-1.amazonaws.com
 * open develop tools to inspect the files and data transfer between the front end and server
 * click 'try witcha now' to test the facial effect
@@ -35,27 +35,27 @@ The following files in the repository are used to maintian all subject related d
 
 
 --------------------------------------------------------------------------------------
-## AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+#### AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
-## Datebase -- MySQL files (QiuXuan Lin)
+#### Datebase -- MySQL files (QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
-## Python code -- Python code (Yang Ming, YuanKun Li)
+#### Python code -- Python code (Yang Ming, YuanKun Li)
 
-###Sprint 1:
-
-* 
-
-###Sprint2:
+#####Sprint 1:
 
 * 
 
-###Sprint3:
+#####Sprint2:
 
 * 
 
-###Sprint4:
+#####Sprint3:
+
+* 
+
+#####Sprint4:
 
 * 
 
@@ -63,7 +63,7 @@ The following files in the repository are used to maintian all subject related d
 
 
 --------------------------------------------------------------------------------------
-## Webdesign -- (Zhe Cai, QiuXuan Lin)
+#### Webdesign -- (Zhe Cai, QiuXuan Lin)
 
 There are five folders, the first one is the learning notes I wrote for this project.
 And the subsequent folders are the four versions of the websites I have done for the four sprints.
