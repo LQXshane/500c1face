@@ -15,10 +15,15 @@ To achive this, I've been looking into different approaches such as the Amazon A
 
 This folder contains the following information:
 
-* PHP files to get the frontend and backend connected.
-* Witch101_LipsticksDB: originally collected information during development process. All info is now on the server. A manual is also included to show how to upload the forementioned info onto EC2 instances.
-* backlog: desscibes some expolartotry attemps such as inspecting other makeup databases to optimize virtual makeup accuracy.
-* test_connection.jpg: A demo to show sucessful connection between MySQL and other functionalities.
+
+* Witch101_LipsticksDB
+>originally collected information during development process. All info is now on the server. A manual is also included to show how to upload the forementioned info onto EC2 instances.
+* timecoverspider
+>a successful attempt to crawl images from time magazine website. We should dig deep into this and develop our own crawler for beauty products.
+* backlog
+>some other expolartory moves I made. 
+* test_connection.jpg
+>A demo to show sucessful connection between MySQL and other functionalities.
 
 
 
