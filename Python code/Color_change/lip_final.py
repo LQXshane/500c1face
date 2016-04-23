@@ -5,27 +5,10 @@ This file is about final version of change color on lips
 
 
 # -*- coding: utf-8 -*-
-import cv2
-import dlib
-import numpy
-import os
-import sys
 
-def readfile(filename):  
-    '''''Print a file to the standard output.'''  
-    f = file(filename)  
-    col = f.read().rstrip() 
-    value = col.lstrip('#')
-    lv = len(value)
-    value = value[::-1]
-    col = tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
-    return col
-    f.close()  
+
 """
-def readfile(filename):
-    with open(filename) as f:
-        array = [int(x) for x in next(f).split()] 
-    return array
+
 """
 color=readfile(sys.argv[2])
 b=color[0]

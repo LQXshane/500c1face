@@ -1,21 +1,23 @@
-# EC500C1 Make-up Project:WITCH
+### WITCH: EC500C1 Face Recognition/Makeup Project
 
-The outcome of this project is to use AWS to host a web app that allow the photos end users upload from the computer to be processed in the server side. The processes is to help user to try out make-up online and make purchase through the app or in other linked online shops.
+> Hello World. We're team "Witch" from ECE department, Boston University.
+Witch is a curriculum-based software application team project. A core technology objective was given to us, face recognition, and we have sucessfully transformed it in terms of building a real-world executable and marketable application. 
+#####The idea is to utilize facial landmark detection for virtual makeup, and beyond that, we wanted to make recommendations or suggestions based on the makeups that our customer have just tried on. We believe that technology have simlified a lot of things and Witch will be another proof- it reduces the time cost and eliminates hygene concerns for women shopping for beauty products and who knows, men could also use our "witchcraft" to pick out a *perfect* present for their girl. ;)
 
-## Introduction
-* Web app design
-* Host web app and Python code on Amazon AWS
-* Virtual effect processed through Python with dlib and OpenCV
-* Link to Amazon Product advertising API
+>Witch Tells You Which. 
 
-The following files are used to maintian all subject related documents
-* AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
-* Datebase -- MySQL files (QiuXuan Lin)
-* Python code -- Python code (Yang Ming, YuanKun Li)
-* Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
+
+#### Introduction
+So far, we have pulled out a web-based application hosted by cloudfront computer server. Such main functionalities are
+lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to the purchasing page. These are achieved by:
+
+* Website frontend design, in conjunction with backend 
+* L(inux)- A(pache) - M(ySQL) - P(ython & PHP) Dynamic web hosting
+* Facial landmard detection and virtual effect  with dlib and OpenCV bindings
+* Amazon Product advertising/ItemLookup API
 
 --------------------------------------------------------------------------------------
-## How to use the websites:
+#### How to use the web app:
 * open it with firefox: http://ec2-54-173-250-109.compute-1.amazonaws.com
 * open develop tools to inspect the files and data transfer between the front end and server
 * click 'try witcha now' to test the facial effect
@@ -24,17 +26,44 @@ The following files are used to maintian all subject related documents
 * choose to change lipstick or eyebrow
 * choose the color to apply
 
---------------------------------------------------------------------------------------
-## AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+The following files in the repository are used to maintian all subject related documents
+
+1. AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+2. Datebase -- MySQL files (QiuXuan Lin)
+3. Python code -- Python code (Yang Ming, YuanKun Li)
+4. Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
+
 
 --------------------------------------------------------------------------------------
-## Datebase -- MySQL files (QiuXuan Lin)
+#### AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
-## Python code -- Python code (Yang Ming, YuanKun Li)
+#### Datebase -- MySQL files (QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
-## Webdesign -- (Zhe Cai, QiuXuan Lin)
+#### Python code -- Python code (Yang Ming, YuanKun Li)
+
+#####Sprint 1:
+
+* 
+
+#####Sprint2:
+
+* 
+
+#####Sprint3:
+
+* 
+
+#####Sprint4:
+
+* 
+
+
+
+
+--------------------------------------------------------------------------------------
+#### Webdesign -- (Zhe Cai, QiuXuan Lin)
 
 There are five folders, the first one is the learning notes for building dynamic website. And the subsequent folders are the four versions of the websites I have done for the four sprints.
 
@@ -76,3 +105,4 @@ Each sprint has more features added to it:
 * savePicture.php -- receive the picture from the frontend and save it in local folder
 * sendpyimg.php -- triggered by the frontend; receive the color code and save it to cc.txt; evoke python script; send processed picture to frontend
 * sendpyimgeye.php -- similar to sendpyimg, but process eyebrow instead of lips
+
