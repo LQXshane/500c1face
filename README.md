@@ -11,16 +11,10 @@ Witch is a curriculum-based software application team project. A core technology
 So far, we have pulled out a web-based application hosted by cloudfront computer server. Such main functionalities are
 lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to the purchasing page. These are achieved by:
 
-* Web app design
-* Host web app and Python code on Amazon AWS
-* Virtual effect processed through Python with dlib and OpenCV bindings
+* Website frontend design, in conjunction with backend 
+* L(inux)- A(pache) - M(ySQL) - P(ython & PHP) Dynamic web hosting
+* Facial landmard detection and virtual effect  with dlib and OpenCV bindings
 * Amazon Product advertising/ItemLookup API
-
-The following files are used to maintian all subject related documents
-* AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
-* Datebase -- MySQL files (QiuXuan Lin)
-* Python code -- Python code (Yang Ming, YuanKun Li)
-* Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
 ## How to use the web app:
@@ -31,6 +25,12 @@ The following files are used to maintian all subject related documents
 * click 'upload' to send the picture to server; for the best result, make sure there is sufficient lighting in the room
 * choose to change lipstick or eyebrow
 * choose the color to apply
+
+The following files in the repository are used to maintian all subject related documents
+1. AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+2. Datebase -- MySQL files (QiuXuan Lin)
+3. Python code -- Python code (Yang Ming, YuanKun Li)
+4. Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
 ## AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
