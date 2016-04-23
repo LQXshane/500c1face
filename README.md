@@ -31,13 +31,17 @@ And the subsequent folders are the four versions of the websites I have done for
 
 This README.txt file is mainly focusing on the final version (pres4 presentation).
 
+How to use the websites:
+* open it with firefox: http://ec2-54-173-250-109.compute-1.amazonaws.com
+* open develop tools to inspect the files and data transfer between the front end and server
+
 AWS screenshot -- the screenshot of content in AWS
 
 cc.txt -- the color code the frontend sent for python script
 
-contact.php -- all webpage use this, it is the contact section of the frontend
+contact.php -- all webpages use this, it is the contact section of the frontend
 
-error.jpg -- error message is sent frontend if no face or more than one face is detected
+error.jpg -- these error pictures are sent to frontend if no face or more than one face is detected
 
 eyebrow.json -- due to the limited time, this is used to replace the actual database section for eyebrow
 
@@ -55,12 +59,12 @@ index.php -- homepage
 
 mysqli_connection.php --  done by Qiuxuan Lin. log into database
 
-nav.php -- all webpage use this, it is the nav section of the frontend
+nav.php -- all webpages use this, it is the nav section of the frontend
 
 protfolio.php -- all webpage use this, it is the protfolio section of the frontend
 
-savePicture.php -- receive the picture from the frontend and save it
+savePicture.php -- receive the picture from the frontend and save it in local folder
 
-sendpyimg -- triggered by the frontend; receive the color code and save it as cc.txt; evoke python script; send processed picture to frontend
+sendpyimg -- triggered by the frontend; receive the color code and save it to cc.txt; evoke python script; send processed picture to frontend
 
-sendpyimgeye --  similar to sendpyimg, but process eyebrow instead of lip
+sendpyimgeye --  similar to sendpyimg, but process eyebrow instead of lips
