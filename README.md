@@ -55,8 +55,14 @@ The following files are used to maintian all subject related documents
 --------------------------------------------------------------------------------------
 ## Webdesign -- (Zhe Cai, QiuXuan Lin)
 
-There are five folders, the first one is the learning notes I wrote for this project.
+There are five folders, the first one is the learning notes for building dynamic website.
 And the subsequent folders are the four versions of the websites I have done for the four sprints.
+
+Each sprint has more features added to it:
+* sprint 1: static website for the front end
+* sprint 2: estabilish first dynamic website on local host with a simple GET image function
+* sprint 3: upload website on AWS; connect to webcam; send and get images to and from server; connect to MySQL and send data to frontend; trigger python at AWS
+* sprint 4: be able to run python-opencv-dlib at server; display product data at frontend; better frontend UI
 
 This README.txt file is mainly focusing on the final version (pres4 presentation).
 * AWS screenshot -- the screenshot of content in AWS
