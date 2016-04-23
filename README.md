@@ -33,6 +33,24 @@ The following files are used to maintian all subject related documents
 --------------------------------------------------------------------------------------
 ## Python code -- Python code (Yang Ming, YuanKun Li)
 
+#Sprint 1:
+
+*
+#Sprint2:
+
+*
+
+#Sprint3:
+
+*
+
+#Sprint4:
+
+*
+
+
+
+
 --------------------------------------------------------------------------------------
 ## Webdesign -- (Zhe Cai, QiuXuan Lin)
 
