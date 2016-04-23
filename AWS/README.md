@@ -1,9 +1,28 @@
+##Introduction
+> Updated and mantained by Qiuxuan Lin
 
 
+This sections contains some general setup on the server side. Learning to use and deploy an app on Amazon AWS could be a very useful skillset during the process of agile software development.
+
+In our project, the web application is essentially made of four parts:
+
+* A linux machine as host
+* Apache server
+* MySQL as database
+* PHP and python, as well as dlib and OpenCV bindings
+
+
+In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments.
+
+
+
+
+######Getting aroud with AWS and EC2 is always a good starting point. Detailed tutrial is prepared for everyone and for my teammates to quickly get into it. See below:
+--------------------------------------------------
 ###Tutorial for set up EC2
 You dont have to know EVERYTHING, it gives a brief explaination of what EC2 is made of.
 
-> Updated and mantained by Qiuxuan Lin
+
 
 visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
 
