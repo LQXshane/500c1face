@@ -75,6 +75,7 @@ Each sprint has more features added to it:
 * sprint 4: be able to run python-opencv-dlib at server; display product data at frontend; better frontend UI
 * This README.txt file is mainly focusing on the final version (pres4 website).
 
+##### AWS content tree
 * EC2
   * Python/opencv
   * Apache server
