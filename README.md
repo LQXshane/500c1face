@@ -12,7 +12,7 @@ The following files are used to maintian all subject related documents
 * AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
 * Datebase -- MySQL files (QiuXuan Lin)
 * Python code -- Python code (Yang Ming, YuanKun Li)
-* Webdesign -- all files related to dynamic website design for this project (Zhe Cai, QiuXuan Lin)
+* Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
 
 --------------------------------------------------------------------------------------
 ## AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
@@ -24,7 +24,7 @@ The following files are used to maintian all subject related documents
 ## Python code -- Python code (Yang Ming, YuanKun Li)
 
 --------------------------------------------------------------------------------------
-## Webdesign (Zhe Cai, QiuXuan Lin)
+## Webdesign -- (Zhe Cai, QiuXuan Lin)
 
 There are five folders, the first one is the learning notes I wrote for this project.
 And the subsequent folders are the four versions of the websites I have done for the four sprints.
