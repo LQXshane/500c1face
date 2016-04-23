@@ -1,4 +1,4 @@
-####Below is a sample manipulation log file that I used to update DB on the EC2 instance.
+Below is a sample manipulation log file that I used to update DB on the EC2 instance.
 
 
 Last login: Sat Apr 23 16:39:25 on ttys000
