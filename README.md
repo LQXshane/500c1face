@@ -65,15 +65,11 @@ Each sprint has more features added to it:
 * sprint 4: be able to run python-opencv-dlib at server; display product data at frontend; better frontend UI
 
 This README.txt file is mainly focusing on the final version (pres4 website).
-EC2
-|
-| --Python/opencv
-|
-| --Apache server
-     |
-     | ---MySQL
-     |   |
-     |   | --mysqli_connection.php
+* EC2
+  * Python/opencv
+  * Apache server
+    * MySQL
+      * mysqli_connection.php
      |
      | ---PHP
          |
