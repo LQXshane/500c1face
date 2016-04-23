@@ -109,9 +109,10 @@
                     <div class="col-md-4 text-center">
                     <!--panel content -->
                         <div id="panel" class="text-align: center">
-                           <p style="font-size:200%; color:#00b38f;" id="product"></p>
-                           <img width="200" height="200" src="" id="url"></img>
-
+                            <p style="font-size:200%; color:#00b38f;" id="product"></p>
+                            <a id='plink'>
+                                <img width="200" height="200" src="" id="url"></img>
+                            </a>
                         </div>                    
                     </div>
                 </div>
@@ -215,6 +216,7 @@
                                     $(this).click(function(){$("#panel").toggle()
                                     $("#url").attr("src",item.ImgUrl);
                                     $("#product").html(item.Product);
+                                    $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -224,6 +226,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -234,6 +237,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -243,6 +247,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -252,6 +257,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -262,6 +268,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -271,6 +278,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -280,6 +288,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -289,6 +298,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 
@@ -298,6 +308,7 @@
                                 $(this).click(function(){$("#panel").toggle()
                                 $("#url").attr("src",item.ImgUrl);
                                 $("#product").html(item.Product);
+                                $('#plink').addClass("href",item.PurchaseLink);
                             });});
                             }
 

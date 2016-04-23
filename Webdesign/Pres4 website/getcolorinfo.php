@@ -4,7 +4,7 @@ if ($_POST['action'] == 'lipstick') {
 
 require_once('../mysqli_connection.php');
 
-$query = "SELECT Brand,Color_code,Product,ImgUrl FROM Lipstick";
+$query = "SELECT Brand,Color_code,Product,ImgUrl,PurchaseLink FROM Lipstick";
 
 
 $response = @mysqli_query($dbc, $query);
