@@ -65,6 +65,31 @@ Each sprint has more features added to it:
 * sprint 4: be able to run python-opencv-dlib at server; display product data at frontend; better frontend UI
 
 This README.txt file is mainly focusing on the final version (pres4 website).
+EC2
+|
+|--Python/opencv
+|
+|--Apache server
+     |
+     |---MySQL
+     |   |
+     |   |--mysqli_connection.php
+     |
+     |---PHP
+         |
+         |--css
+         |
+         |--img
+         |
+         |--js
+         |
+         |--dlib
+         |  |
+         |  |--eyebrow.py/facedect.py
+         |
+         |--cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php
+            /nav.php/protfolio.phpsavePicture.php/sendpyimg.php/sendpyimgeye.php
+            
 * AWS screenshot -- the screenshot of content in AWS
 * cc.txt -- the color code the frontend sent for python script
 * contact.php -- all webpages use this, it is the contact section of the frontend
@@ -80,5 +105,5 @@ This README.txt file is mainly focusing on the final version (pres4 website).
 * nav.php -- all webpages use this, it is the nav section of the frontend
 * protfolio.php -- all webpage use this, it is the protfolio section of the frontend
 * savePicture.php -- receive the picture from the frontend and save it in local folder
-* sendpyimg -- triggered by the frontend; receive the color code and save it to cc.txt; evoke python script; send processed picture to frontend
-* sendpyimgeye --  similar to sendpyimg, but process eyebrow instead of lips
+* sendpyimg.php -- triggered by the frontend; receive the color code and save it to cc.txt; evoke python script; send processed picture to frontend
+* sendpyimgeye.php --  similar to sendpyimg, but process eyebrow instead of lips
