@@ -4,14 +4,14 @@ The outcome of this project is to use AWS to host a web app that allow the photo
 
 Key components:
 * Web app design
-* Virtual effect processed through Python with dlib and OpenCV
 * Host web app and Python code on Amazon AWS
+* Virtual effect processed through Python with dlib and OpenCV
 * Link to Amazon Product advertising API
 
 The following files are used to maintian all subject related documents
-* AWS -- Amazon Web Service & Product Advetising API
-* Datebase -- MySQL files
-* Python code -- Python code
-* Webdesign -- all files related to dynamic website design for this project
+* AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+* Datebase -- MySQL files (QiuXuan Lin)
+* Python code -- Python code (Yang Ming, YuanKun Li)
+* Webdesign -- all files related to dynamic website design for this project (Zhe Cai, QiuXuan Lin)
 
 
