@@ -5,7 +5,7 @@ import numpy
 import os
 import sys
 
-PREDICTOR_PATH = "./shape_predictor_68_face_landmarks.dat"
+PREDICTOR_PATH = "dlib/python_exemples/shape_predictor_68_face_landmarks.dat"
 SCALE_FACTOR = 1 
 FEATHER_AMOUNT = 11
 
@@ -225,4 +225,4 @@ warped_im2 = warp_im(im2, M, im1.shape)
 
 output_im = im1 * (1.0 - combined_mask) + warped_im2 * combined_mask
 
-cv2.imwrite('./output.jpeg', output_im)
+cv2.imwrite('face.jpeg', output_im)
