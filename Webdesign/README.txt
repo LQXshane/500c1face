@@ -5,6 +5,8 @@ And the subsequent folders are the four versions of the websites.
 
 This README.txt file is mainly focusing on the final version (pres4 presentation).
 
+AWS screenshot -- the screenshot of content in AWS
+
 cc.txt -- the color code the frontend sent for python script
 
 contact.php -- all webpage use this, it is the contact section of the frontend
