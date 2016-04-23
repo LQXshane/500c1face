@@ -34,6 +34,11 @@ This README.txt file is mainly focusing on the final version (pres4 presentation
 How to use the websites:
 * open it with firefox: http://ec2-54-173-250-109.compute-1.amazonaws.com
 * open develop tools to inspect the files and data transfer between the front end and server
+* click 'try witcha now' to test the facial effect
+* click 'snap photo' to take a photo
+* click 'upload' to send the picture to server; for the best result, make sure there is sufficient lighting in the room
+* choose to change lipstick or eyebrow
+* choose the color to apply
 
 AWS screenshot -- the screenshot of content in AWS
 
