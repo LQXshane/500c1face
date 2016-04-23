@@ -105,7 +105,3 @@ Each sprint has more features added to it:
 * savePicture.php -- receive the picture from the frontend and save it in local folder
 * sendpyimg.php -- triggered by the frontend; receive the color code and save it to cc.txt; evoke python script; send processed picture to frontend
 * sendpyimgeye.php -- similar to sendpyimg, but process eyebrow instead of lips
-<<<<<<< HEAD
-
-=======
->>>>>>> 1f4ba74ad93b586468338985f8e0405b13964e61
