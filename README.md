@@ -2,7 +2,7 @@
 
 > Hello World. We're team "Witch" from ECE department, Boston University.
 Witch is a curriculum-based software application team project. A core technology objective was given to us, face recognition, and we have sucessfully transformed it in terms of building a real-world executable and marketable application. 
-#####The idea is to utilize facial landmark detection for virtual makeup, and beyond that, we wanted to make recommendations or suggestions based on the makeups that our customer have just tried on. We believe that technology have simlified a lot of things and Witch will be another proof- it reduces the time cost and eliminates hygene concerns for women shopping for beauty products and who knows, men could also use our "witchcraft" to pick out a *perfect* present for their girl. ;)
+#####The idea is to utilize facial landmark detection for virtual makeup, and beyond that, we wanted to make recommendations or suggestions based on the makeups that our customer have just tried on. We believe that technology have simlified a lot of things and Witch will be another proof- it reduces the time cost and eliminates hygene concerns for women shopping for beauty products and who knows, men could also use our "witchcraft" to pick out a *perfect* present for their girls. ;)
 
 >Witch Tells You Which. 
 
