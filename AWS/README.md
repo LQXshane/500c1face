@@ -1,6 +1,9 @@
-#THANKS TO Qiuxuan Lin for the links and tips
 
-#Tutorial for set up EC2, you dont have to know this, it gives a brief explaination of what EC2 is made of.
+
+###Tutorial for set up EC2
+You dont have to know EVERYTHING, it gives a brief explaination of what EC2 is made of.
+
+> Updated and mantained by Qiuxuan Lin
 
 visit this website for step 1 to 5: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
 
@@ -26,7 +29,7 @@ visit this website for step 6: https://docs.aws.amazon.com/AWSEC2/latest/UserGui
 
 
 
-#Tutorial for connect EC2, which matters more for everyone
+##Tutorial for connect EC2, which matters more for everyone
 
 
 First of all, make sure that the instance is **running**.   If it's turned off no way anyone can connect to it.
@@ -86,11 +89,11 @@ There are two tabs:
 
 Ignore the security message and our passcode is 
 
->#500c1fac
+> ok, let's keep it secret
 
-#**Click connect!**
+##**Click connect!**
 
-###**4. Finally**
+####**4. Finally**
 
 You will be able to see the linux virtual desktop and it is no difference than working on your own! Have fun!
 

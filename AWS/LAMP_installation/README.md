@@ -17,7 +17,7 @@
 
 > mysql_secure_installation
 
-###FINALLY, test if you can command into your mysql query
+#####FINALLY, test if you can command into your mysql query
 
 > mysql -u root -p
 
