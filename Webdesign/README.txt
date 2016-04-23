@@ -1,7 +1,7 @@
 README
 
 There are five folders, the first one is the learning notes I wrote for this project.
-And the subsequent folders are the four versions of the websites.
+And the subsequent folders are the four versions of the websites I have done for the four sprints.
 
 This README.txt file is mainly focusing on the final version (pres4 presentation).
 
