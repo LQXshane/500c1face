@@ -1,7 +1,7 @@
 ####Database Section
 > Updated and maintain by Qiuxuan Lin
 
-We have built a make up database exclusively for Witch. This is done by using exhaustic search and Amazon ItemLookup API.
+We have built a make up database exclusively for Witch. This is done by using exhaustive search and Amazon ItemLookup API.
 
 * PHP files to get the frontend and backend connected.
 * Witch101_LipsticksDB: originally collected information during development process. All info is now on the server.
