@@ -12,7 +12,11 @@ In our project, the web application is essentially made of four parts:
 * PHP and python, as well as dlib and OpenCV bindings
 
 
-In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments.
+In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments. 
+
+* PHP_MySQL
+
+> A pracice and two completed .php file used for mysql-php connection that could connect whatever information stored in mysql database(Witch101) and deliver it to the frontend.
 
 
 
