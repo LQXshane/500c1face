@@ -64,7 +64,7 @@ Each sprint has more features added to it:
 * sprint 3: upload website on AWS; connect to webcam; send and get images to and from server; connect to MySQL and send data to frontend; trigger python at AWS
 * sprint 4: be able to run python-opencv-dlib at server; display product data at frontend; better frontend UI
 
-This README.txt file is mainly focusing on the final version (pres4 presentation).
+This README.txt file is mainly focusing on the final version (pres4 website).
 * AWS screenshot -- the screenshot of content in AWS
 * cc.txt -- the color code the frontend sent for python script
 * contact.php -- all webpages use this, it is the contact section of the frontend
