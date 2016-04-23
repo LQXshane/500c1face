@@ -9,7 +9,7 @@ We have built a make up database exclusively for Witch.
 3. Purchase Link
 4. Image of that prodduct
 
-####These all consists of our game-changer business concept. One could easily change color randomly, just use a random number generator, but could not make recommendations without such a well-stacked database.
+#####Our game-changer business concept MUST consists of the above- one could easily change color randomly, just use a random number generator, but could not make recommendations without such a well-stacked database.
 
 To achive this, I've been looking into different approaches such as the Amazon API and reseached into web crawler. For the time being, we have constructed the database by using exhaustive search and Amazon ItemLookup API, which is good enough during our developing process this semester. To move forward, we must consider using a crawler/spider that could scrapy pictures from websites automatically so that our database could be huge!
 
