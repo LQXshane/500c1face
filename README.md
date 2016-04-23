@@ -27,10 +27,15 @@ lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to 
 * choose the color to apply
 
 The following files in the repository are used to maintian all subject related documents
+
 1. AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+
 2. Datebase -- MySQL files (QiuXuan Lin)
+
 3. Python code -- Python code (Yang Ming, YuanKun Li)
+
 4. Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
+
 
 --------------------------------------------------------------------------------------
 ## AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
