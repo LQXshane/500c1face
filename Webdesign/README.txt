@@ -15,6 +15,8 @@ error.jpg -- error message is sent frontend if no face or more than one face is 
 
 eyebrow.json -- due to the limited time, this is used to replace the actual database section for eyebrow
 
+eyebrow.py -- done by Yang Ming and Yuankun Li. It is the python script for changing eyebrow color
+
 facedect.py -- done by Yang Ming and Yuankun Li. It is the python script for lip color
 
 faceEffect.php -- the webpage for changing color
