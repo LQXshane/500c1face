@@ -1,9 +1,30 @@
 '''
 This file is about final version of change color on lips
+I cooperate approach1 with approach2
+
+Step1.  Get the grayscale of image.
+
+Step2.  Adjust the histogram. 
+
+        (It in case the picture is to dark or to light)
+
+Step3.  Using gaussian Threshold and rewrite the picture 
+
+Step4.  Add salt on picture,the number is 20000
+
+Step5.  Set the white part of picture to color1
+        Set the black part of picture to color2
+        (color1 is what we want the color,color2 is a little darker than color1.
+        Since most lipstick color are red， I set the gradual change of color from original to (0,0,255).)
+        In this case, it could remain the detail of the picture.
+
+Step6.  Blend the new picture (which has already changed color) with the original picture.
+        I use the addweight as 0.7 to 0.3
+        (This step guarantee that the effect will be different due to the different people's orginal lip color)
+
+Step7.  Blur the picture to make it more nature
+
 '''
-
-
-
 # -*- coding: utf-8 -*-
 
 

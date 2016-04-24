@@ -1,4 +1,25 @@
 '''
+This code is about change the color of picture by using gaussian threshold.
+
+Step1. 	Get the grayscale of image.
+
+Step2. 	Adjust the histogram. 
+
+		(It in case the picture is to dark or to light)
+
+Step3. 	Using gaussian Threshold and rewrite the picture 
+
+Step4. 	Set the white part of picture to color1
+	 	Set the black part of picture to color2
+	 	(color1 is what we want the color,color2 is a little lighter than color1)
+	 	In this case, it could remain the detail of the picture.
+
+Step5. 	Blend the new picture (which has already changed color) with the original picture.
+		I use the addweight as 0.7 to 0.3
+	 	(This step guarantee that the effect will be different due to the different people's orginal lip color)
+
+Step6. 	Blur the picture to make it more nature
+
 '''
 # -*- coding: utf-8 -*-
 

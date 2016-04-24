@@ -1,4 +1,6 @@
 '''
+This code is about adding the texture by using salt.
+
 '''
 # -*- coding: utf-8 -*-  
   
