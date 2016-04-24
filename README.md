@@ -87,7 +87,7 @@ Each sprint has more features added to it:
       * js
       * dlib
         * eyebrow.py/facedect.py
-      * cc.txt/contact.php/error.jpg/eyebrow.json/faceEffect.php/getcolorindo.php/geteyebrow.php/index.php/nav.php/protfolio.phpsavePicture.php/sendpyimg.php/sendpyimgeye.php
+      * cc.txt / contact.php / error.jpg / eyebrow.json / faceEffect.php / getcolorindo.php / geteyebrow.php / index.php / nav.php / protfolio.php / savePicture.php / sendpyimg.php / sendpyimgeye.php
 
 * AWS screenshot -- the screenshot of content in AWS
 * cc.txt -- the color code the frontend sent for python script
