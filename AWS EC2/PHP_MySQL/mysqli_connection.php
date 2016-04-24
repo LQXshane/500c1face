@@ -9,7 +9,7 @@
         //as is needed.
         //mysql> GRANT INSERT, SELECT, DELETE, UPDATE ON WITCH101.*
     //-> TO 'root'@'localhost'
-    //-> IDENTIFIED BY 'xxxxxxxxxxx';
+    //-> IDENTIFIED BY 'xxxxxxxx';
         //SELECT : Select rows in tables
         //INSERT : Insert new rows into tables
         //UPDATE : Change data in rows
