@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,19 +15,19 @@
        }
     </style>
 
-	<!-- Page title -->
+<!-- Page title -->
     <title>Facial Effect</title>
 
-    <!-- Bootstrap Core CSS -->
+<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+ <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     
-	<!-- JQuery -->
+<!-- JQuery -->
     <script type="text/Javascript" src="js/jquery.js"></script>
 
-    <!-- panel style -->
+<!-- panel style -->
     <style>
         #panel {
             width: 320px;
@@ -38,18 +37,15 @@
             background-color: #FFFFFF;
         }
     </style>
-
-
 </head>
 
 
 <body>
 
-    <!-- Navigation -->
+<!-- Navigation -->
     <?php require 'nav.php';?>
 
-
-    <!-- core -->
+<!-- core -->
     <header  class="header">
         <div class="text-vertical-center">
             <div class="container" id="top">
@@ -84,7 +80,6 @@
                             <button type="button" id="lc7" class="btn4d btn-default" onclick="lc7()"></button>
                             <button type="button" id="lc8" class="btn4d btn-default" onclick="lc8()"></button>
                             <button type="button" id="lc9" class="btn4d btn-default" onclick="lc9()"></button>
-
                         </div>
 
                         <div class="btn-group" id="btngrp-eye">
@@ -94,16 +89,10 @@
                             <button type="button" id="lb3" class="btn4d btn-default" onclick="lb3()"></button>
                             <button type="button" id="lb4" class="btn4d btn-default" onclick="lb4()"></button>
                         </div>
-
-
-
                         <br>
                         <br>
                         <img id="ajax" width="320" height="240"></img>
                         <br>
-
-
-
                     </div>
 
                     <div class="col-md-4 text-center">
@@ -120,9 +109,6 @@
         </div>
     </header>
 
-
-
-
     <!-- Portfolio -->
     <?php require 'portfolio.php';?>
 
@@ -130,15 +116,11 @@
     <?php require 'contact.php';?>
 
 
-
-
 <!---------------------------------Jquery/ajax script---------------------------------->
 
 <!-- Capture photo -->
     <script>
-        // Put event listeners into place
         window.addEventListener("DOMContentLoaded", function () {
-            // Grab elements, create settings, etc.
             var canvas = document.getElementById("canvas"),
                 context = canvas.getContext("2d"),
                 video = document.querySelector('video'),
@@ -147,8 +129,7 @@
                     console.log("Video capture error: ", error.code);
                 };
 
-            // Put video listeners into place
-            if (navigator.getUserMedia) { // Standard
+            if (navigator.getUserMedia) { 
                 navigator.getUserMedia(videoObj, function (stream) {
                     video.src = stream;
                     video.play();
@@ -166,7 +147,6 @@
                 }, errBack);
             }
 
-            //Triger camera
             document.getElementById("snap").addEventListener("click", function () {
                 context.drawImage(video, 0, 0, 320, 240);
             })
@@ -188,7 +168,6 @@
             console.log(Pic)
         }
     </script>
-
 
 
 <!-- database connection -->
@@ -358,21 +337,14 @@
                                 $("#product").html(item.Product);
                             });});
                             }
-
-
-
-
-
                         })
                     },
                     error: function (data) {
                         console.log("error");
                         console.log(data);
                     }
-
                 })
             });
-
 
 <!-- send color code to server and trigger python -->
             $("#lc0").click( function () {
@@ -614,8 +586,6 @@
                     }
                 });
             });
-
-
         });
 
     </script>
@@ -623,7 +593,6 @@
 
 <!-- send color code to server and trigger python -->
     <script>
-
         function lc0(filename) {
             var xmlhttp = new XMLHttpRequest;
 
@@ -636,7 +605,6 @@
             xmlhttp.open("GET", 'sendpyimg.php', true);
             xmlhttp.send(null);
         }
-
 
         function lc1(filename) {
             var xmlhttp = new XMLHttpRequest;
@@ -690,7 +658,6 @@
             xmlhttp.send(null);
         }
 
-
         function lc5(filename) {
             var xmlhttp = new XMLHttpRequest;
 
@@ -716,7 +683,6 @@
             xmlhttp.open("GET", 'sendpyimg.php', true);
             xmlhttp.send(null);
         }
-
 
         function lc7(filename) {
             var xmlhttp = new XMLHttpRequest;
@@ -745,7 +711,6 @@
 
         }
 
-
         function lc9(filename) {
             var xmlhttp = new XMLHttpRequest;
 
@@ -762,7 +727,6 @@
             xmlhttp.send(null);
         }
 
-
         function lb0(filename) {
             var xmlhttp = new XMLHttpRequest;
 
@@ -775,7 +739,6 @@
             xmlhttp.open("GET", 'sendpyimgeye.php', true);
             xmlhttp.send(null);
         }
-
 
         function lb1(filename) {
             var xmlhttp = new XMLHttpRequest;
@@ -828,14 +791,7 @@
             xmlhttp.open("GET", 'sendpyimgeye.php', true);
             xmlhttp.send(null);
         }
-
-
-
-
     </script>
-
-
-
 
 
 <!---------------------------------WebPage script------------------------------------------>
