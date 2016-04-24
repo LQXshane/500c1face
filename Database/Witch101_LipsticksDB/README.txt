@@ -1,32 +1,7 @@
 Below is a sample manipulation log file that I used to update DB on the EC2 instance.
 
 
-Last login: Sat Apr 23 16:39:25 on ttys000
--bash: /usr/local/bin/virtualenvwrapper.sh: No such file or directory
-29-55-41-155-wireless1x:~ Shane$ cd Desktop/Project\ History/
-29-55-41-155-wireless1x:Project History Shane$ chmod 400 500c1face.pem
-29-55-41-155-wireless1x:Project History Shane$ ssh -i "witcha500c1.pem" ubuntu@ec2-54-173-250-109.compute-1.amazonaws.com
-Welcome to Ubuntu 14.04.4 LTS (GNU/Linux 3.13.0-74-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com/
-
-  System information as of Sat Apr 23 21:58:08 UTC 2016
-
-  System load:  0.42               Processes:           142
-  Usage of /:   34.1% of 29.39GB   Users logged in:     0
-  Memory usage: 21%                IP address for eth0: 172.31.7.217
-  Swap usage:   0%
-
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
-
-  Get cloud support with Ubuntu Advantage Cloud Guest:
-    http://www.ubuntu.com/business/services/cloud
-
-7 packages can be updated.
-7 updates are security updates.
-
-
+ubuntu@ec2-54-173-250-109.compute-1.amazonaws.com
 Last login: Sat Apr 23 21:58:09 2016 from 29-55-41-155-wireless1x.bu.edu
 (cv) ubuntu@ip-172-31-7-217:~$ mysql -u root -p
 Enter password: 

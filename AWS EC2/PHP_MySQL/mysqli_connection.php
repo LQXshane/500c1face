@@ -8,7 +8,7 @@
         //Command that gives the database user the least amount of power
         //as is needed.
         //mysql> GRANT INSERT, SELECT, DELETE, UPDATE ON WITCH101.*
-    //-> TO 'root'@'localhost'
+    //-> TO 'xxx'@'localhost'
     //-> IDENTIFIED BY 'xxxxxxxx';
         //SELECT : Select rows in tables
         //INSERT : Insert new rows into tables
@@ -17,7 +17,7 @@
 
 
         // Defined as constants so that they can't be changed
-        DEFINE ('DB_USER', 'root');
+        DEFINE ('DB_USER', 'xxxx');
         DEFINE ('DB_PASSWORD', 'xxxxxxxx');
         DEFINE ('DB_HOST', 'localhost');
         DEFINE ('DB_NAME', 'WITCH101');
