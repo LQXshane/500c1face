@@ -45,19 +45,23 @@ The following files in the repository are used to maintian all subject related d
 
 #####Sprint 1:
 
-* 
+* Setting the environmental of Opencv and dlib(YuanKun Li,Yang Ming)
 
 #####Sprint2:
 
 * 
+* Achieve the basic function of color change(Yang Ming)
 
 #####Sprint3:
 
 * 
+* Obtain details of picture and add mixed color on lips(Yang Ming)
 
 #####Sprint4:
 
 * 
+* Add lustre on lips.(Yang Ming)
+* Add color on eyebrown.(Yang Ming)
 
 
 
