@@ -14,7 +14,7 @@ lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to 
 * Website frontend design, in conjunction with backend 
 * Dynamic web hosting
 * Facial landmard detection and virtual effect  with dlib and OpenCV bindings
-* Amazon Product advertising/ItemLookup API
+* A dedicated database 
 
 --------------------------------------------------------------------------------------
 #### How to use the web app:
