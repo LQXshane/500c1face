@@ -47,11 +47,12 @@ In our project, the web application is essentially made of four parts:
 * PHP and python, as well as dlib and OpenCV bindings
 
 
-In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments. Another important thing is to ensure backend-frontend connection through the following:
+In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments. The important thing is to ensure backend-frontend connection through the following, see detailed files and tutorial at the following folder
 
 * PHP_MySQL
+* LAMP_installation
+* API_tutorial
 
-> A pracice and two completed .php file used for mysql-php connection that could connect whatever information stored in mysql database(Witch101) and deliver it to the frontend.
 
 
 --------------------------------------------------------------------------------------
@@ -67,7 +68,13 @@ We have built a make up database exclusively for Witch.
 
 #####Our game-changer business concept MUST consists of the above- one could easily change color randomly, just use a random number generator, but could not make recommendations without such a well-stacked database.
 
-To achive this, I've been looking into different approaches such as the Amazon API and reseached into web crawler. For the time being, we have constructed the database by using exhaustive search and Amazon ItemLookup API, which is good enough during our developing process this semester. 
+To achive this, I've been looking into different approaches such as the Amazon API and reseached into web crawler. For the time being, we have constructed the database by using exhaustive search and Amazon ItemLookup API, which is good enough during our developing process this semester. This section contains the following folders:
+
+* WITCH101_LipsticksDB: our primary DB in use
+* test_connection.jpg: real-time demo
+* backlog: misc. DB examples that worth looking into
+* timecoverspider: detailed tutorial for python scapy
+
 
 To move forward, we must consider using a crawler/spider that could scrapy pictures from websites automatically so that our database could be huge!
 
