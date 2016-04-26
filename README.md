@@ -82,22 +82,26 @@ To move forward, we must consider using a crawler/spider that could scrapy pictu
 #### Python code -- Python code (Yang Ming, YuanKun Li)
 
 #####Sprint 1:
-
+* Get face land mark detection done(Yuankun Li)
 * Setting the environmental of Opencv and dlib(YuanKun Li,Yang Ming)
 
 #####Sprint2:
 
-* 
+* Make the program of getting the area of lips and eyebrows cut from original photo(Yuankun Li)
 * Achieve the basic function of color change(Yang Ming)
 
 #####Sprint3:
 
-* 
+* Make the program of blending the features from the photo that is color-changed to the original photo(Yuankun Li)  
+* Make the program of adjusting two photos by aligning two faces(Yuankun Li)
 * Obtain details of picture and add mixed color on lips(Yang Ming)
 
 #####Sprint4:
 
-* 
+* Make the program of reading color information from other txt files(Yuankun Li)
+* Make the program of converting hex code to rgb code(Yuankun Li)
+* Improve the accuracy of face land mark detection(Yuankun Li)
+* Make the program of error-detecting(Yuankun Li)
 * Add lustre on lips.(Yang Ming)
 * Add color on eyebrown.(Yang Ming)
 
