@@ -28,17 +28,48 @@ lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to 
 
 The following files in the repository are used to maintian all subject related documents
 
-1. AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
-2. Datebase -- MySQL files (QiuXuan Lin)
+1. AWS EC2 -- Dynamic Web hosting(Zhe Cai, QiuXuan Lin)
+2. Datebase -- Misc. files construsting DB (QiuXuan Lin)
 3. Python code -- Python code (Yang Ming, YuanKun Li)
 4. Webdesign -- all files related to dynamic website design (Zhe Cai, QiuXuan Lin)
 
 
 --------------------------------------------------------------------------------------
-#### AWS -- Amazon Web Service & Product Advetising API (Zhe Cai, QiuXuan Lin)
+#### AWS -- Dynamic Web hosting (Zhe Cai, QiuXuan Lin)
+
+This sections contains some general setup on the server side. Learning to use and deploy an app on Amazon AWS could be a very useful skillset during the process of agile software development.
+
+In our project, the web application is essentially made of four parts:
+
+* A linux machine as host
+* Apache server
+* MySQL as database
+* PHP and python, as well as dlib and OpenCV bindings
+
+
+In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments. Another important thing is to ensure backend-frontend connection through the following:
+
+* PHP_MySQL
+
+> A pracice and two completed .php file used for mysql-php connection that could connect whatever information stored in mysql database(Witch101) and deliver it to the frontend.
+
 
 --------------------------------------------------------------------------------------
-#### Datebase -- MySQL files (QiuXuan Lin)
+#### Datebase --  Misc. files construsting DB (QiuXuan Lin)
+
+We have built a make up database exclusively for Witch. 
+
+#####One of our major problem in this project is that there is NO EXISTING similar dataset for beauty products. That means, you can not find any database that contains all of the below:
+1. Product color in hex or RGB
+2. Product name, brand, price or other essential info
+3. Purchase Link
+4. Image of that prodduct
+
+#####Our game-changer business concept MUST consists of the above- one could easily change color randomly, just use a random number generator, but could not make recommendations without such a well-stacked database.
+
+To achive this, I've been looking into different approaches such as the Amazon API and reseached into web crawler. For the time being, we have constructed the database by using exhaustive search and Amazon ItemLookup API, which is good enough during our developing process this semester. 
+
+To move forward, we must consider using a crawler/spider that could scrapy pictures from websites automatically so that our database could be huge!
 
 --------------------------------------------------------------------------------------
 #### Python code -- Python code (Yang Ming, YuanKun Li)
