@@ -12,7 +12,7 @@ So far, we have pulled out a web-based application hosted by cloudfront computer
 lipcolor/eyebrow virtual try-out and live-time recommendation that leads you to the purchasing page. These are achieved by:
 
 * Website frontend design, in conjunction with backend 
-* L(inux)- A(pache) - M(ySQL) - P(ython & PHP) Dynamic web hosting
+* Dynamic web hosting
 * Facial landmard detection and virtual effect  with dlib and OpenCV bindings
 * Amazon Product advertising/ItemLookup API
 
@@ -41,10 +41,10 @@ This sections contains some general setup on the server side. Learning to use an
 
 In our project, the web application is essentially made of four parts:
 
-* A linux machine as host
-* Apache server
-* MySQL as database
-* PHP and python, as well as dlib and OpenCV bindings
+1. A linux machine as host
+2. Apache server
+3. MySQL as database
+4. PHP and python, as well as dlib and OpenCV bindings
 
 
 In short, this is usually called a LAMP server. In this folder I am presenting mostly tutorials for setting up the forementioned environments. The important thing is to ensure backend-frontend connection through the following, see detailed files and tutorial at the following folder
