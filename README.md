@@ -60,13 +60,13 @@ In short, this is usually called a LAMP server. In this folder I am presenting m
 
 We have built a make up database exclusively for Witch. 
 
-#####One of our major problem in this project is that there is NO EXISTING similar dataset for beauty products. That means, you can not find any database that contains all of the below:
+##### One of our major problem in this project is that there is NO EXISTING similar dataset for beauty products. That means, you can not find any database that contains all of the below:
 1. Product color in hex or RGB
 2. Product name, brand, price or other essential info
 3. Purchase Link
 4. Image of that prodduct
 
-#####Our game-changer business concept MUST consists of the above- one could easily change color randomly, just use a random number generator, but could not make recommendations without such a well-stacked database.
+##### Our game-changer business concept MUST consists of the above- one could easily change color randomly, just use a random number generator, but could not make recommendations without such a well-stacked database.
 
 To achive this, I've been looking into different approaches such as the Amazon API and reseached into web crawler. For the time being, we have constructed the database by using exhaustive search and Amazon ItemLookup API, which is good enough during our developing process this semester. This section contains the following folders:
 
@@ -81,22 +81,22 @@ To move forward, we must consider using a crawler/spider that could scrapy pictu
 --------------------------------------------------------------------------------------
 #### Python code -- Python code (Yang Ming, YuanKun Li)
 
-#####Sprint 1:
+##### Sprint 1:
 * Get face land mark detection done(Yuankun Li)
 * Setting the environmental of Opencv and dlib(YuanKun Li,Yang Ming)
 
-#####Sprint2:
+##### Sprint2:
 
 * Make the program of getting the area of lips and eyebrows cut from original photo(Yuankun Li)
 * Achieve the basic function of color change(Yang Ming)
 
-#####Sprint3:
+##### Sprint3:
 
 * Make the program of blending the features from the photo that is color-changed to the original photo(Yuankun Li)  
 * Make the program of adjusting two photos by aligning two faces(Yuankun Li)
 * Obtain details of picture and add mixed color on lips(Yang Ming)
 
-#####Sprint4:
+##### Sprint4:
 
 * Make the program of reading color information from other txt files(Yuankun Li)
 * Make the program of converting hex code to rgb code(Yuankun Li)
