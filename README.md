@@ -1,3 +1,5 @@
+* Update: This application is not maintained on server anymore. But hopefully, we can give you a good idea of how to build such applications.
+
 ### WITCH: EC500C1 Face Recognition/Makeup Project
 
 > Hello World. We're team "Witch" from ECE department, Boston University.
